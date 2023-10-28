@@ -1,5 +1,6 @@
 import { Roboto_Slab } from "next/font/google";
-import "./globals.css";
+import Providers from "@/components/providers";
+import "@/public/assets/style/globals.css";
 import clsx from "clsx";
 
 const roboto = Roboto_Slab({
@@ -20,8 +21,34 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={clsx("text-gray-700", roboto.className)}>
-        <Header />
-        {children}
+        <Providers>
+          <Header />
+          {children}
+          <a
+            href="#"
+            class="back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 dark:bg-gray-900 dark:border-gray-800 right-4 bottom-4 hidden"
+            aria-label="Scroll To Top"
+          >
+            <svg
+              width="1rem"
+              height="1rem"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </Providers>
       </body>
     </html>
   );
