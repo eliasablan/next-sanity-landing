@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 function Team() {
   return (
@@ -63,11 +63,13 @@ function Team() {
             >
               {/* team block */}
               <div className="relative overflow-hidden px-6">
-                {/* <Image
-                    src="src/img/dummy/avatar1.png"
-                    className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                    alt="title image"
-                  /> */}
+                <Image
+                  src="/assets/img/avatar1.png"
+                  width={500}
+                  height={500}
+                  className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                  alt="title image"
+                />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">
@@ -177,11 +179,13 @@ function Team() {
               data-wow-delay=".1s"
             >
               <div className="relative overflow-hidden px-6">
-                {/* <Image
-                    src="src/img/dummy/avatar3.png"
-                    className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                    alt="title image"
-                  /> */}
+                <Image
+                  src="/assets/img/avatar3.png"
+                  width={500}
+                  height={500}
+                  className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                  alt="title image"
+                />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">
@@ -291,11 +295,13 @@ function Team() {
               data-wow-delay=".3s"
             >
               <div className="relative overflow-hidden px-6">
-                {/* <Image
-                    src="src/img/dummy/avatar2.png"
-                    className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                    alt="title image"
-                  /> */}
+                <Image
+                  src="/assets/img/avatar2.png"
+                  width={500}
+                  height={500}
+                  className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                  alt="title image"
+                />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">
@@ -405,11 +411,13 @@ function Team() {
               data-wow-delay=".5s"
             >
               <div className="relative overflow-hidden px-6">
-                {/* <Image
-                    src="src/img/dummy/avatar4.png"
-                    className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
-                    alt="title image"
-                  /> */}
+                <Image
+                  src="/assets/img/avatar4.png"
+                  width={500}
+                  height={500}
+                  className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                  alt="title image"
+                />
               </div>
               <div className="pt-6 text-center">
                 <p className="text-lg leading-normal font-bold mb-1">
