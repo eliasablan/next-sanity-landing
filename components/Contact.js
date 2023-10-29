@@ -4,7 +4,8 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="section relative pb-20 bg-white dark:bg-gray-800"
+      // className="section relative pb-20 bg-white dark:bg-gray-800"
+      className="section relative pb-20 bg-white"
     >
       <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="flex flex-wrap flex-row -mx-4 justify-center">
@@ -16,7 +17,8 @@ function Contact() {
             >
               {/* section header */}
               <header className="text-center mx-auto mb-12 lg:px-20">
-                <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">
+                {/* <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100"> */}
+                <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800">
                   <span className="font-light">Contact</span> Us
                 </h2>
                 {/* <svg
@@ -73,7 +75,8 @@ function Contact() {
                     <input
                       type="text"
                       name="name"
-                      className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                      // className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                      className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
                       id="name"
                     />
                     <div className="validate"></div>
@@ -84,7 +87,8 @@ function Contact() {
                     </label>
                     <input
                       type="email"
-                      className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                      // className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                      className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
                       name="email"
                       id="email"
                     />
@@ -97,7 +101,8 @@ function Contact() {
                   </label>
                   <input
                     type="text"
-                    className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                    // className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                    className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
                     name="subject"
                     id="subject"
                   />
@@ -108,7 +113,8 @@ function Contact() {
                     Message
                   </label>
                   <textarea
-                    className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                    // className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-700 dark:focus:border-gray-600"
+                    className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
                     name="message"
                     rows="10"
                     id="messages"

@@ -1,15 +1,17 @@
-import React from 'react'
+import React from "react";
 
 function Team() {
   return (
     <div
       id="team"
-      className="section relative pt-20 pb-8 md:pt-16 bg-white dark:bg-gray-800"
+      // className="section relative pt-20 pb-8 md:pt-16 bg-white dark:bg-gray-800"
+      className="section relative pt-20 pb-8 md:pt-16 bg-white"
     >
       <div className="container xl:max-w-6xl mx-auto px-4">
         {/* section header */}
         <header className="text-center mx-auto mb-12">
-          <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100">
+          {/* <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 dark:text-gray-100"> */}
+          <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800">
             <span className="font-light">Our</span> Team
           </h2>
           {/* <svg
@@ -57,7 +59,8 @@ function Team() {
         <div className="flex flex-wrap flex-row -mx-4 justify-center">
           <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
             <div
-              className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              // className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              className="relative overflow-hidden bg-white mb-12 hover-grayscale-0 wow fadeInUp"
               data-wow-duration="1s"
             >
               {/* team block */}
@@ -170,7 +173,8 @@ function Team() {
           <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
             {/* team block */}
             <div
-              className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              // className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              className="relative overflow-hidden bg-white mb-12 hover-grayscale-0 wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".1s"
             >
@@ -283,7 +287,8 @@ function Team() {
           <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
             {/* team block */}
             <div
-              className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              // className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              className="relative overflow-hidden bg-white mb-12 hover-grayscale-0 wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".3s"
             >
@@ -396,7 +401,8 @@ function Team() {
           <div className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6">
             {/* team block */}
             <div
-              className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              // className="relative overflow-hidden bg-white dark:bg-gray-800 mb-12 hover-grayscale-0 wow fadeInUp"
+              className="relative overflow-hidden bg-white mb-12 hover-grayscale-0 wow fadeInUp"
               data-wow-duration="1s"
               data-wow-delay=".5s"
             >
@@ -512,4 +518,4 @@ function Team() {
   );
 }
 
-export default Team
+export default Team;

@@ -4,7 +4,8 @@ function Clients() {
   return (
     <div
       id="clients"
-      className="section relative py-8 bg-white dark:bg-gray-800"
+      // className="section relative py-8 bg-white dark:bg-gray-800"
+      className="section relative py-8 bg-white"
     >
       <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="lex flex-wrap flex-row -mx-4 justify-center">
