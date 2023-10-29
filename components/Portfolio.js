@@ -68,7 +68,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img1.jpg"
                 width={500}
                 height={500}
@@ -97,7 +97,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img2.jpg"
                 width={500}
                 height={500}
@@ -126,7 +126,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img3.jpg"
                 width={500}
                 height={500}
@@ -155,7 +155,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img4.jpg"
                 width={500}
                 height={500}
@@ -184,7 +184,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img5.jpg"
                 width={500}
                 height={500}
@@ -212,7 +212,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img6.jpg"
                 width={500}
                 height={500}
@@ -241,7 +241,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img7.jpg"
                 width={500}
                 height={500}
@@ -270,7 +270,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img8.jpg"
                 width={500}
                 height={500}
@@ -299,7 +299,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img9.jpg"
                 width={500}
                 height={500}
@@ -328,7 +328,7 @@ const Portfolio = () => {
               className="glightbox3"
             >
               <Image
-                className="block w-full h-auto transform duration-500 grayscale hover:scale-125"
+                className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
                 src="/assets/img/img10.jpg"
                 width={500}
                 height={500}
