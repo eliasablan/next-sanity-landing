@@ -6,6 +6,7 @@ const Providers = ({ children }) => {
   const router = useRouter();
 
   useEffect(() => {
+    // Back to top button
     const myBacktotop = function () {
       // browser window scroll
       var offset = 300,
@@ -282,27 +283,6 @@ const Providers = ({ children }) => {
       });
     };
 
-    // menu mobile
-    const menu_Mobile = function menu_Mobile() {
-      var menu_dropa = document.querySelectorAll(".menu-mobile");
-      var menu_menu_x = document.querySelectorAll(".navbar");
-
-      var _loop = function _loop(i) {
-        menu_dropa[i].addEventListener("click", function (event) {
-          menu_dropa[i].classList.toggle("show");
-          menu_menu_x[i].classList.toggle("hidden");
-        });
-        menu_menu_x[i].addEventListener("click", function (event) {
-          menu_dropa[i].classList.toggle("show");
-          menu_menu_x[i].classList.toggle("hidden");
-        });
-      };
-
-      for (var i = 0; i < menu_dropa.length; i++) {
-        _loop(i);
-      }
-    };
-
     // Custom JS
     const myCustom = function () {
       // insert your javascript in here
@@ -316,7 +296,6 @@ const Providers = ({ children }) => {
 
     myBacktotop();
     myPreloader();
-    menu_Mobile();
     // myLightbox();
     // mySplidejs();
     myTyped();

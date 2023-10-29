@@ -1,9 +1,14 @@
-import React from "react";
+"use client";
+import { useState } from "react";
+import clsx from "clsx";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  console.log("mobileMenuOpen", mobileMenuOpen);
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
-      <nav className="main-nav">
+      <nav className="main-nav bg-white">
         <div className="container xl:max-w-6xl mx-auto px-4">
           <div className="lg:flex lg:justify-between">
             <div className="flex justify-between">
@@ -14,6 +19,7 @@ const Header = () => {
               <div className="flex flex-row items-center py-4 lg:py-0">
                 <div className="relative text-gray-900 hover:text-black block lg:hidden">
                   <button
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     type="button"
                     className="menu-mobile block py-3 px-6 border-b-2 border-transparent"
                   >
@@ -58,9 +64,16 @@ const Header = () => {
 
             <div className="flex flex-row">
               {/* nav menu */}
-              <ul className="navbar bg-white lg:bg-transparent w-full hidden text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold">
+              {/* <ul className="navbar bg-white lg:bg-transparent w-full hidden text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold"> */}
+              <ul
+                className={clsx(
+                  "navbar bg-white lg:bg-transparent w-full text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold",
+                  mobileMenuOpen ? "" : "hidden"
+                )}
+              >
                 <li className="relative hover:text-black">
                   <a
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="active block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#hero"
                   >
@@ -69,6 +82,7 @@ const Header = () => {
                 </li>
                 <li className="relative hover:text-black">
                   <a
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#services"
                   >
@@ -77,6 +91,7 @@ const Header = () => {
                 </li>
                 <li className="relative hover:text-black">
                   <a
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#portfolio"
                   >
@@ -85,6 +100,7 @@ const Header = () => {
                 </li>
                 <li className="relative hover:text-black">
                   <a
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#clients"
                   >
@@ -93,6 +109,7 @@ const Header = () => {
                 </li>
                 <li className="relative hover:text-black">
                   <a
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#team"
                   >
@@ -101,6 +118,7 @@ const Header = () => {
                 </li>
                 <li className="relative hover:text-black">
                   <a
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#contact"
                   >
