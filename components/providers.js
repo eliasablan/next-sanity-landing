@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import SmoothScroll from "smooth-scroll";
+import WOW from "wow.js";
 
 const Providers = ({ children }) => {
   const router = useRouter();
@@ -123,17 +125,17 @@ const Providers = ({ children }) => {
       });
     };
 
-    // Preloader
-    const myPreloader = function () {
-      var xpre = document.querySelector(".preloader");
-      if (xpre != null) {
-        window.addEventListener("load", function () {
-          document.querySelector("body").classList.add("loaded-success");
-        });
-      }
-    };
+    // Preloader (Not configured)
+    // const myPreloader = function () {
+    //   var xpre = document.querySelector(".preloader");
+    //   if (xpre != null) {
+    //     window.addEventListener("load", function () {
+    //       document.querySelector("body").classList.add("loaded-success");
+    //     });
+    //   }
+    // };
 
-    // Lightbox
+    // Lightbox (Not configured)
     // const myLightbox = function () {
     //   // GLightbox
     //   const lightbox_class = document.querySelector(".glightbox3");
@@ -147,7 +149,7 @@ const Providers = ({ children }) => {
     //   }
     // };
 
-    // splidejs
+    // splidejs (Not configured)
     // const mySplidejs = function () {
     //   // mySplidejs
     //   const postslider_class = document.querySelector("#post-carousel");
@@ -201,18 +203,18 @@ const Providers = ({ children }) => {
     };
 
     // wow animate
-    // const myWow = function () {
-    //   new WOW().init();
-    // };
+    const myWow = function () {
+      new WOW().init();
+    };
 
     // Smooth Scroll Anchor
-    // const mySmooth = function () {
-    //   var scroll = new SmoothScroll('a[href*="#"]', {
-    //     offset: 80,
-    //     speed: 1200,
-    //     speedAsDuration: true,
-    //   });
-    // };
+    const mySmooth = function () {
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        offset: 80,
+        speed: 1200,
+        speedAsDuration: true,
+      });
+    };
 
     // if scroll down
     const myScrollspy = function () {
@@ -288,19 +290,13 @@ const Providers = ({ children }) => {
       // insert your javascript in here
     };
 
-    /**
-     * ------------------------------------------------------------------------
-     * Launch Functions
-     * ------------------------------------------------------------------------
-     */
-
     myBacktotop();
-    myPreloader();
+    // myPreloader();
     // myLightbox();
     // mySplidejs();
     myTyped();
-    // myWow();
-    // mySmooth();
+    myWow();
+    mySmooth();
     myScrollspy();
     myCustom();
   }, []);
