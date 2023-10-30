@@ -1,12 +1,14 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, createContext } from "react";
 
 import SmoothScroll from "smooth-scroll";
 import WOW from "wow.js";
 import GLightbox from "glightbox";
 import Splide from "@splidejs/splide";
 
-const Providers = ({ children }) => {
+export const AppContext = createContext({});
+
+const Providers = ({ children, everything }) => {
   useEffect(() => {
     // Back to top button
     const myBacktotop = function () {
@@ -277,7 +279,9 @@ const Providers = ({ children }) => {
     myCustom();
   }, []);
 
-  return <div>{children}</div>;
+  return (
+    <AppContext.Provider value={everything}>{children}</AppContext.Provider>
+  );
 };
 
 export default Providers;

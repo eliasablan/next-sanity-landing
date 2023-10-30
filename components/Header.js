@@ -6,7 +6,6 @@ import Link from "next/link";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  console.log("mobileMenuOpen", mobileMenuOpen);
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       <nav className="main-nav bg-white">
@@ -73,58 +72,58 @@ const Header = () => {
                 )}
               >
                 <li className="relative hover:text-black">
-                  <Link
+                  <a
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="active block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#hero"
                   >
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="relative hover:text-black">
-                  <Link
+                  <a
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#services"
                   >
                     What we do
-                  </Link>
+                  </a>
                 </li>
                 <li className="relative hover:text-black">
-                  <Link
+                  <a
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#portfolio"
                   >
                     Our works
-                  </Link>
+                  </a>
                 </li>
                 <li className="relative hover:text-black">
-                  <Link
+                  <a
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#clients"
                   >
                     Clients
-                  </Link>
+                  </a>
                 </li>
                 <li className="relative hover:text-black">
-                  <Link
+                  <a
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#team"
                   >
                     Team
-                  </Link>
+                  </a>
                 </li>
                 <li className="relative hover:text-black">
-                  <Link
+                  <a
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#contact"
                   >
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

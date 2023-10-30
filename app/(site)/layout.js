@@ -6,6 +6,7 @@ import "@/public/assets/style/globals.css";
 
 import Providers from "@/components/providers";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import { getEverything } from "@/sanity/sanity-utils";
 
@@ -23,12 +24,11 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const everything = await getEverything();
-  console.log("everything", everything);
-  
+
   return (
     <html lang="en">
       <body className={clsx("text-gray-700", roboto.className)}>
-        <Providers>
+        <Providers everything={everything}>
           <Header />
           {children}
           <Link
@@ -56,6 +56,7 @@ export default async function RootLayout({ children }) {
               ></path>
             </svg>
           </Link>
+          <Footer />
         </Providers>
       </body>
     </html>
