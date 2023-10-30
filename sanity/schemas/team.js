@@ -15,9 +15,24 @@ export default defineType({
       type: "string",
       title: "Titulo",
     },
-    // RRSS de compañeros
-    // {
-    //   name: 'RRSS',
-    // }
+    {
+      name: "network",
+      type: "document",
+      title: "RRSS",
+      // of: [{ type: "networkLogo" }],
+      fields: [
+        {
+          name: "link",
+          type: "string",
+          title: "Link",
+        },
+        {
+          name: "logo",
+          type: "reference",
+          to: [{ type: "networkLogo" }],
+          title: "Logo",
+        },
+      ],
+    },
   ],
 });
