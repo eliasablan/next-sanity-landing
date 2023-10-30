@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeroTypedHeader from "./HeroTypedHeader";
 
 const Hero = () => {
   return (
@@ -24,15 +25,7 @@ const Hero = () => {
           <div className="flex-shrink max-w-full px-4 w-full md:w-9/12 lg:w-1/2 self-center lg:pr-12">
             <div className="text-center lg:text-left mt-6 lg:mt-0">
               <div className="mb-12">
-                <h1 className="text-4xl leading-normal text-black font-bold mb-4">
-                  We are a Digital Agency
-                  <br />
-                  serve
-                  <span
-                    data-toggle="typed"
-                    data-options='{"strings": ["Online Marketing", "Web Design", "Mobile Apps", "Brand Identity", "Social Content"]}'
-                  ></span>
-                </h1>
+                <HeroTypedHeader />
                 <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
                   We would direct you to limitless ideas and move your brand
                   into a global landscape.

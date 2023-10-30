@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+
 import SmoothScroll from "smooth-scroll";
 import WOW from "wow.js";
 import GLightbox from "glightbox";
@@ -181,29 +182,6 @@ const Providers = ({ children }) => {
       }
     };
 
-    // Typed Js
-    const myTyped = function () {
-      var x = document.querySelectorAll('[data-toggle="typed"]');
-      "undefined" != typeof Typed &&
-        x &&
-        [].forEach.call(x, function (x) {
-          !(function (x) {
-            var typo = x.dataset.options;
-            typo = typo ? JSON.parse(typo) : {};
-            var object = Object.assign(
-              {
-                typeSpeed: 100,
-                backSpeed: 100,
-                backDelay: 1e3,
-                loop: !0,
-              },
-              typo
-            );
-            new Typed(x, object);
-          })(x);
-        });
-    };
-
     // wow animate
     const myWow = function () {
       new WOW().init();
@@ -296,7 +274,6 @@ const Providers = ({ children }) => {
     // myPreloader();
     myLightbox();
     mySplidejs();
-    myTyped();
     myWow();
     mySmooth();
     myScrollspy();
