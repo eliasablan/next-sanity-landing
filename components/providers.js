@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import SmoothScroll from "smooth-scroll";
 import WOW from "wow.js";
+import GLightbox from "glightbox";
 
 const Providers = ({ children }) => {
   const router = useRouter();
@@ -135,19 +136,19 @@ const Providers = ({ children }) => {
     //   }
     // };
 
-    // Lightbox (Not configured)
-    // const myLightbox = function () {
-    //   // GLightbox
-    //   const lightbox_class = document.querySelector(".glightbox3");
-    //   if (lightbox_class != null) {
-    //     const lightbox = GLightbox({
-    //       selector: ".glightbox3",
-    //       touchNavigation: true,
-    //       loop: true,
-    //       autoplayVideos: true,
-    //     });
-    //   }
-    // };
+    // Lightbox
+    const myLightbox = function () {
+      // GLightbox
+      const lightbox_class = document.querySelector(".glightbox3");
+      if (lightbox_class != null) {
+        const lightbox = GLightbox({
+          selector: ".glightbox3",
+          touchNavigation: true,
+          loop: true,
+          autoplayVideos: true,
+        });
+      }
+    };
 
     // splidejs (Not configured)
     // const mySplidejs = function () {
@@ -292,7 +293,7 @@ const Providers = ({ children }) => {
 
     myBacktotop();
     // myPreloader();
-    // myLightbox();
+    myLightbox();
     // mySplidejs();
     myTyped();
     myWow();
