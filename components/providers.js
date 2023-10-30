@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import SmoothScroll from "smooth-scroll";
 import WOW from "wow.js";
 import GLightbox from "glightbox";
+import Splide from "@splidejs/splide";
 
 const Providers = ({ children }) => {
   const router = useRouter();
@@ -150,35 +151,35 @@ const Providers = ({ children }) => {
       }
     };
 
-    // splidejs (Not configured)
-    // const mySplidejs = function () {
-    //   // mySplidejs
-    //   const postslider_class = document.querySelector("#post-carousel");
-    //   if (postslider_class != null) {
-    //     const postslider = new Splide(postslider_class, {
-    //       rewind: true,
-    //       pagination: true,
-    //       arrows: true,
-    //       type: "loop",
-    //       drag: "free",
-    //       perPage: 6,
-    //       perMove: 1,
-    //       gap: 24,
-    //       breakpoints: {
-    //         1200: {
-    //           perPage: 4,
-    //         },
-    //         768: {
-    //           perPage: 3,
-    //         },
-    //         500: {
-    //           perPage: 2,
-    //         },
-    //       },
-    //     });
-    //     postslider.mount();
-    //   }
-    // };
+    // splidejs
+    const mySplidejs = function () {
+      // mySplidejs
+      const postslider_class = document.querySelector("#post-carousel");
+      if (postslider_class != null) {
+        const postslider = new Splide(postslider_class, {
+          rewind: true,
+          pagination: true,
+          arrows: true,
+          type: "loop",
+          drag: "free",
+          perPage: 6,
+          perMove: 1,
+          gap: 24,
+          breakpoints: {
+            1200: {
+              perPage: 4,
+            },
+            768: {
+              perPage: 3,
+            },
+            500: {
+              perPage: 2,
+            },
+          },
+        });
+        postslider.mount();
+      }
+    };
 
     // Typed Js
     const myTyped = function () {
@@ -294,7 +295,7 @@ const Providers = ({ children }) => {
     myBacktotop();
     // myPreloader();
     myLightbox();
-    // mySplidejs();
+    mySplidejs();
     myTyped();
     myWow();
     mySmooth();

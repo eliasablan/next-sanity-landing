@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 function Clients() {
   return (
@@ -20,66 +20,78 @@ function Clients() {
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
                       <a href="#" target="_blank">
-                        {/* <Image
-                            className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
-                            src="src/img/dummy/img1.png"
-                            alt="Image Description"
-                          /> */}
+                        <Image
+                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          src="/assets/img/img1.png"
+                          width={500}
+                          height={500}
+                          alt="Image Description"
+                        />
                       </a>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
                       <a href="#" target="_blank">
-                        {/* <Image
-                            className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
-                            src="src/img/dummy/img2.png"
-                            alt="Image Description"
-                          /> */}
+                        <Image
+                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          src="/assets/img/img2.png"
+                          width={500}
+                          height={500}
+                          alt="Image Description"
+                        />
                       </a>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
                       <a href="#" target="_blank">
-                        {/* <Image
-                            className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
-                            src="src/img/dummy/img3.png"
-                            alt="Image Description"
-                          /> */}
+                        <Image
+                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          src="/assets/img/img3.png"
+                          width={500}
+                          height={500}
+                          alt="Image Description"
+                        />
                       </a>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
                       <a href="#" target="_blank">
-                        {/* <Image
-                            className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
-                            src="src/img/dummy/img4.png"
-                            alt="Image Description"
-                          /> */}
+                        <Image
+                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          src="/assets/img/img4.png"
+                          width={500}
+                          height={500}
+                          alt="Image Description"
+                        />
                       </a>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
                       <a href="#" target="_blank">
-                        {/* <Image
-                            className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
-                            src="src/img/dummy/img5.png"
-                            alt="Image Description"
-                          /> */}
+                        <Image
+                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          src="/assets/img/img5.png"
+                          width={500}
+                          height={500}
+                          alt="Image Description"
+                        />
                       </a>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
                       <a href="#" target="_blank">
-                        {/* <Image
-                            className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
-                            src="src/img/dummy/img6.png"
-                            alt="Image Description"
-                          /> */}
+                        <Image
+                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          src="/assets/img/img6.png"
+                          width={500}
+                          height={500}
+                          alt="Image Description"
+                        />
                       </a>
                     </div>
                   </div>
