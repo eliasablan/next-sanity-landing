@@ -1,6 +1,5 @@
 "use client";
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 import SmoothScroll from "smooth-scroll";
 import WOW from "wow.js";
@@ -8,8 +7,6 @@ import GLightbox from "glightbox";
 import Splide from "@splidejs/splide";
 
 const Providers = ({ children }) => {
-  const router = useRouter();
-
   useEffect(() => {
     // Back to top button
     const myBacktotop = function () {
