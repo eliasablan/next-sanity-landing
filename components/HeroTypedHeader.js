@@ -1,20 +1,22 @@
 "use client";
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useContext } from "react";
+
+import { AppContext } from "./providers";
 
 function HeroTypedHeader() {
+  const sanityData = useContext(AppContext).filter(
+    (obj) => obj._type == "heroHeaderMessage"
+  );
+
   // Create reference to store the DOM element containing the animation
   const el = useRef(null);
 
   useEffect(() => {
+    const strings = sanityData.map((obj) => obj.text);
+    console.log("strings", strings);
     const typed = new Typed(el.current, {
-      strings: [
-        "Online Marketing",
-        "Web Design",
-        "Mobile Apps",
-        "Brand Identity",
-        "Social Content",
-      ],
+      strings,
       typeSpeed: 100,
       backSpeed: 100,
       loop: !0,
