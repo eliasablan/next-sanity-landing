@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroTypedHeader from "./HeroTypedHeader";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
                   into a global landscape.
                 </p>
               </div>
-              <a
+              <Link
                 className="py-2.5 px-10 inline-block text-center leading-normal text-gray-900 bg-white border-b border-gray-100 hover:text-black hover:ring-0 focus:outline-none focus:ring-0 mr-4"
                 href="#portfolio"
               >
@@ -104,9 +105,9 @@ const Hero = () => {
                   />
                 </svg>
                 Our Work
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border-b border-gray-800 hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
                 target="_blank"
                 href="https://aribudin.gumroad.com/l/tailone"
@@ -146,7 +147,7 @@ const Hero = () => {
                   />
                 </svg>
                 Download Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

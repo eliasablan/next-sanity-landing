@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import clsx from "clsx";
+import Link from "next/link";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -72,58 +73,58 @@ const Header = () => {
                 )}
               >
                 <li className="relative hover:text-black">
-                  <a
+                  <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="active block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#hero"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="relative hover:text-black">
-                  <a
+                  <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#services"
                   >
                     What we do
-                  </a>
+                  </Link>
                 </li>
                 <li className="relative hover:text-black">
-                  <a
+                  <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#portfolio"
                   >
                     Our works
-                  </a>
+                  </Link>
                 </li>
                 <li className="relative hover:text-black">
-                  <a
+                  <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#clients"
                   >
                     Clients
-                  </a>
+                  </Link>
                 </li>
                 <li className="relative hover:text-black">
-                  <a
+                  <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#team"
                   >
                     Team
-                  </a>
+                  </Link>
                 </li>
                 <li className="relative hover:text-black">
-                  <a
+                  <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
                     href="#contact"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

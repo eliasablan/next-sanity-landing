@@ -2,6 +2,7 @@ import { Roboto_Slab } from "next/font/google";
 import Providers from "@/components/providers";
 import "@/public/assets/style/globals.css";
 import clsx from "clsx";
+import Link from "next/link";
 
 const roboto = Roboto_Slab({
   subsets: ["latin"],
@@ -24,11 +25,11 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           {children}
-          <a
+          <Link
             href="#"
             // className="back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 dark:bg-gray-900 dark:border-gray-800 right-4 bottom-4 hidden"
             className="back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 right-4 bottom-4 hidden"
-            aria-label="Scroll To Top"
+            ariaLabel="Scroll To Top"
           >
             <svg
               width="1rem"
@@ -48,7 +49,7 @@ export default function RootLayout({ children }) {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </a>
+          </Link>
         </Providers>
       </body>
     </html>

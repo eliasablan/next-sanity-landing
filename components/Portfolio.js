@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Portfolio = () => {
   return (
@@ -61,7 +62,7 @@ const Portfolio = () => {
           data-wow-duration="1s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img1.jpg"
               data-gallery="gallery1"
               data-glightbox="title: My title; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -80,7 +81,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Branding</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -90,7 +91,7 @@ const Portfolio = () => {
           data-wow-delay=".1s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img2.jpg"
               data-gallery="gallery1"
               data-glightbox="title: My title; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -109,7 +110,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Web</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -119,7 +120,7 @@ const Portfolio = () => {
           data-wow-delay=".3s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img3.jpg"
               data-gallery="gallery1"
               data-glightbox="title: My title; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -138,7 +139,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Graphic</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -148,7 +149,7 @@ const Portfolio = () => {
           data-wow-delay=".5s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img4.jpg"
               data-gallery="gallery1"
               data-glightbox="title: My title; description:  This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -167,7 +168,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Branding</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -177,7 +178,7 @@ const Portfolio = () => {
           data-wow-delay=".7s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img5.jpg"
               data-gallery="gallery1"
               data-glightbox="title: My title; description:  This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -196,7 +197,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Web</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -205,7 +206,7 @@ const Portfolio = () => {
           data-wow-duration="1s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img6.jpg"
               data-gallery="gallery1"
               data-glightbox="title: Graphic Design; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -224,7 +225,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Graphic</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -234,7 +235,7 @@ const Portfolio = () => {
           data-wow-delay=".1s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img7.jpg"
               data-gallery="gallery1"
               data-glightbox="title: Logo Design; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -253,7 +254,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Branding</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -263,7 +264,7 @@ const Portfolio = () => {
           data-wow-delay=".3s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img8.jpg"
               data-gallery="gallery1"
               data-glightbox="title: Web Development; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -282,7 +283,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Web</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -292,7 +293,7 @@ const Portfolio = () => {
           data-wow-delay=".5s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img9.jpg"
               data-gallery="gallery1"
               data-glightbox="title: Graphic Design; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -311,7 +312,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">Graphic</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
 
@@ -321,7 +322,7 @@ const Portfolio = () => {
           data-wow-delay=".7s"
         >
           <div className="relative overflow-hidden cursor-pointer mb-6">
-            <a
+            <Link
               href="/assets/img/img10.jpg"
               data-gallery="gallery1"
               data-glightbox="title: App Design; description: This is a wider card with supporting text below as a natural lead-in to additional content"
@@ -340,7 +341,7 @@ const Portfolio = () => {
                 </h3>
                 <small className="d-block">App</small>
               </div>
-            </a>
+            </Link>
           </div>
         </figure>
       </div>

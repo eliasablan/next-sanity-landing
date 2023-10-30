@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <button style={{ margin: "10px" }}>
-          <a href="/">Go to app</a>
+          <Link href="/">Go to app</Link>
         </button>
         {children}
       </body>

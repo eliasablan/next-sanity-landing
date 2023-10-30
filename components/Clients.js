@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Clients() {
   return (
@@ -19,7 +20,7 @@ function Clients() {
                 <div className="splide__list grayscale">
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <Image
                           className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                           src="/assets/img/img1.png"
@@ -27,12 +28,12 @@ function Clients() {
                           height={500}
                           alt="Image Description"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <Image
                           className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                           src="/assets/img/img2.png"
@@ -40,12 +41,12 @@ function Clients() {
                           height={500}
                           alt="Image Description"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <Image
                           className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                           src="/assets/img/img3.png"
@@ -53,12 +54,12 @@ function Clients() {
                           height={500}
                           alt="Image Description"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <Image
                           className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                           src="/assets/img/img4.png"
@@ -66,12 +67,12 @@ function Clients() {
                           height={500}
                           alt="Image Description"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <Image
                           className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                           src="/assets/img/img5.png"
@@ -79,12 +80,12 @@ function Clients() {
                           height={500}
                           alt="Image Description"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="splide__slide">
                     <div className="w-full px-4 text-center pb-3">
-                      <a href="#" target="_blank">
+                      <Link href="#" target="_blank">
                         <Image
                           className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
                           src="/assets/img/img6.png"
@@ -92,7 +93,7 @@ function Clients() {
                           height={500}
                           alt="Image Description"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

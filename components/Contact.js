@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Contact() {
   return (
@@ -120,7 +121,7 @@ function Contact() {
                   <div className="validate"></div>
                 </div>
                 <div className="text-center mb-6">
-                  <a
+                  <Link
                     className="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
                     href="#project"
                   >
@@ -159,7 +160,7 @@ function Contact() {
                       />
                     </svg>
                     Send message
-                  </a>
+                  </Link>
                 </div>
               </form>
               {/* end contact form */}
