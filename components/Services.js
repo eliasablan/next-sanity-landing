@@ -61,7 +61,6 @@ const Services = async () => {
         <div className="flex flex-wrap flex-row -mx-4 text-center">
           {services
             ? services.map((service) => {
-                console.log("logo", service.logo);
                 return (
                   <div
                     key={service._id}

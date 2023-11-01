@@ -5,7 +5,6 @@ import { getEverything } from "@/sanity/sanity-utils";
 const Portfolio = async () => {
   const everything = await getEverything();
   const portfolio = everything.filter((obj) => obj._type == "portfolio");
-  console.log("portfolio", portfolio);
 
   return (
     <div
