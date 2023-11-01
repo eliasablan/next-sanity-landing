@@ -1,11 +1,34 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const BackToTopButton = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Link
       href="#"
-      className="back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 right-4 bottom-4 hidden"
-      ariaLabel="Scroll To Top"
+      className={`back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 right-4 bottom-4 ${
+        showButton ? "block" : "hidden"
+      }`}
     >
       <svg
         width="1rem"
