@@ -6,17 +6,16 @@ export default defineType({
   title: "Servicio",
   fields: [
     {
-      name: "image",
-      type: "image",
-      title: "Imagen",
-      options: {
-        hotspot: true,
-      },
-      fields: [
+      name: "logo",
+      type: "array",
+      title: "Logo SVG",
+      of: [
         {
-          name: "alt",
-          type: "string",
-          title: "Alt",
+          type: "block",
+          styles: [
+            { title: "SVG", value: "svg" },
+            { title: "Ruta", value: "path" },
+          ],
         },
       ],
     },

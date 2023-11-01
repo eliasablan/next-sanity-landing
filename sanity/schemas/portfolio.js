@@ -26,6 +26,11 @@ export default defineType({
       title: "Titulo",
     },
     {
+      name: "category",
+      type: "string",
+      title: "Categoria",
+    },
+    {
       name: "description",
       type: "text",
       title: "Descripcion",

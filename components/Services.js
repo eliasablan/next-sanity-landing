@@ -1,11 +1,8 @@
-import React from "react";
-
 import { getEverything } from "@/sanity/sanity-utils";
 
 const Services = async () => {
   const everything = await getEverything();
   const services = everything.filter((obj) => obj._type == "service");
-  console.log("services", services);
 
   return (
     <div
@@ -63,35 +60,32 @@ const Services = async () => {
         {/* row */}
         <div className="flex flex-wrap flex-row -mx-4 text-center">
           {services
-            ? services.map((service) => (
-                <div
-                  key={service._id}
-                  className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-                  data-wow-duration="1s"
-                >
-                  {/* service block */}
-                  <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-                    <div className="inline-block text-gray-900 mb-4">
-                      {/* icon */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="2rem"
-                        height="2rem"
-                        fill="currentColor"
-                        className="bi bi-search"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                      </svg>
+            ? services.map((service) => {
+                console.log("logo", service.logo);
+                return (
+                  <div
+                    key={service._id}
+                    className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+                    data-wow-duration="1s"
+                  >
+                    {/* service block */}
+                    <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                      <div className="inline-block text-gray-900 mb-4">
+                        {/* icon */}
+
+                        {/* {service.logo
+                          ? service.logo
+                          : null} */}
+                      </div>
+                      <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-500">{service.description}</p>
                     </div>
-                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-500">{service.description}</p>
+                    {/* end service block */}
                   </div>
-                  {/* end service block */}
-                </div>
-              ))
+                );
+              })
             : ""}
         </div>
         {/* end row */}
