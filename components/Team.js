@@ -92,7 +92,8 @@ const Team = async () => {
                       <div className="mt-2 mb-5 space-x-2">
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Twitter link"
+                          // ariaLabel="Twitter link"
+                          aria-label="Twitter link"
                           href="#"
                         >
                           {/* <i className="fab fa-twitter text-twitter"></i> */}
@@ -111,7 +112,8 @@ const Team = async () => {
                         </Link>
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Facebook link"
+                          // ariaLabel="Facebook link"
+                          aria-label="Facebook link"
                           href="#"
                         >
                           {/* <i className="fab fa-facebook text-facebook"></i> */}
@@ -130,7 +132,8 @@ const Team = async () => {
                         </Link>
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Instagram link"
+                          // ariaLabel="Instagram link"
+                          aria-label="Instagram link"
                           href="#"
                         >
                           {/* <i className="fab fa-instagram text-instagram"></i> */}
@@ -157,7 +160,8 @@ const Team = async () => {
                         </Link>
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Linkedin link"
+                          // ariaLabel="Linkedin link"
+                          aria-label="Linkedin link"
                           href="#"
                         >
                           {/* <i className="fab fa-linkedin text-linkedin"></i> */}

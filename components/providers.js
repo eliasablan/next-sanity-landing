@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, createContext } from "react";
 
-import WOW from "wow.js";
-import GLightbox from "glightbox";
+// import WOW from "wow.js";
+// import GLightbox from "glightbox";
+
 import Splide from "@splidejs/splide";
 
 export const AppContext = createContext({});
@@ -21,18 +22,18 @@ const Providers = ({ children, everything }) => {
       // };
 
       // Lightbox
-      const myLightbox = function () {
-        // GLightbox
-        const lightbox_class = document.querySelector(".glightbox3");
-        if (lightbox_class != null) {
-          const lightbox = GLightbox({
-            selector: ".glightbox3",
-            touchNavigation: true,
-            loop: true,
-            autoplayVideos: true,
-          });
-        }
-      };
+      // const myLightbox = function () {
+      //   // GLightbox
+      //   const lightbox_class = document.querySelector(".glightbox3");
+      //   if (lightbox_class != null) {
+      //     const lightbox = GLightbox({
+      //       selector: ".glightbox3",
+      //       touchNavigation: true,
+      //       loop: true,
+      //       autoplayVideos: true,
+      //     });
+      //   }
+      // };
 
       // splidejs
       const mySplidejs = function () {
@@ -65,9 +66,9 @@ const Providers = ({ children, everything }) => {
       };
 
       // wow animate
-      const myWow = function () {
-        new WOW().init();
-      };
+      // const myWow = function () {
+      //   new WOW().init();
+      // };
 
       // if scroll down
       const myScrollspy = function () {
@@ -261,9 +262,9 @@ const Providers = ({ children, everything }) => {
       };
 
       // myPreloader();
-      myLightbox();
+      // myLightbox();
       mySplidejs();
-      myWow();
+      // myWow();
       myScrollspy();
       myBacktotop();
       myCustom();
