@@ -7,10 +7,7 @@ const Team = async () => {
   const team = everything.filter((obj) => obj._type == "team");
 
   return (
-    <div
-      id="team"
-      className="section relative pt-20 pb-8 md:pt-16 bg-white"
-    >
+    <div id="team" className="section relative pt-20 pb-8 md:pt-16 bg-white">
       <div className="container xl:max-w-6xl mx-auto px-4">
         {/* section header */}
         <header className="text-center mx-auto mb-12">
@@ -64,9 +61,7 @@ const Team = async () => {
                   key={teammate._id}
                   className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6 fade-up-show"
                 >
-                  <div
-                    className="relative overflow-hidden bg-white mb-12 hover-grayscale-0"
-                  >
+                  <div className="relative overflow-hidden bg-white mb-12 hover-grayscale-0">
                     {/* team block */}
                     <div className="relative overflow-hidden px-6">
                       <Image
@@ -88,7 +83,7 @@ const Team = async () => {
                       <div className="mt-2 mb-5 space-x-2">
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Twitter link"
+                          aria-label="Twitter link"
                           href="#"
                         >
                           {/* <i className="fab fa-twitter text-twitter"></i> */}
@@ -107,7 +102,7 @@ const Team = async () => {
                         </Link>
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Facebook link"
+                          aria-label="Facebook link"
                           href="#"
                         >
                           {/* <i className="fab fa-facebook text-facebook"></i> */}
@@ -126,7 +121,7 @@ const Team = async () => {
                         </Link>
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Instagram link"
+                          aria-label="Instagram link"
                           href="#"
                         >
                           {/* <i className="fab fa-instagram text-instagram"></i> */}
@@ -153,7 +148,7 @@ const Team = async () => {
                         </Link>
                         <Link
                           className="hover:text-blue-700"
-                          ariaLabel="Linkedin link"
+                          aria-label="Linkedin link"
                           href="#"
                         >
                           {/* <i className="fab fa-linkedin text-linkedin"></i> */}

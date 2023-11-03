@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, createContext } from "react";
 
-import GLightbox from "glightbox";
+// import GLightbox from "glightbox";
 
 import Splide from "@splidejs/splide";
 
@@ -19,19 +19,19 @@ const Providers = ({ children, everything }) => {
     //   }
     // };
 
-    // Lightbox
-    const myLightbox = function () {
-      // GLightbox
-      const lightbox_class = document.querySelector(".glightbox3");
-      if (lightbox_class != null) {
-        const lightbox = GLightbox({
-          selector: ".glightbox3",
-          touchNavigation: true,
-          loop: true,
-          autoplayVideos: true,
-        });
-      }
-    };
+    // // Lightbox
+    // const myLightbox = function () {
+    //   // GLightbox
+    //   const lightbox_class = document.querySelector(".glightbox3");
+    //   if (lightbox_class != null) {
+    //     const lightbox = GLightbox({
+    //       selector: ".glightbox3",
+    //       touchNavigation: true,
+    //       loop: true,
+    //       autoplayVideos: true,
+    //     });
+    //   }
+    // };
 
     // splidejs
     const mySplidejs = function () {
@@ -133,7 +133,7 @@ const Providers = ({ children, everything }) => {
     };
 
     // myPreloader();
-    myLightbox();
+    // myLightbox();
     mySplidejs();
     myScrollspy();
   }, []);
