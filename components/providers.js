@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, createContext } from "react";
 
-import WOW from "wow.js";
 import GLightbox from "glightbox";
 
 import Splide from "@splidejs/splide";
@@ -62,11 +61,6 @@ const Providers = ({ children, everything }) => {
         });
         postslider.mount();
       }
-    };
-
-    // wow animate
-    const myWow = function () {
-      new WOW().init();
     };
 
     // if scroll down
@@ -141,7 +135,6 @@ const Providers = ({ children, everything }) => {
     // myPreloader();
     myLightbox();
     mySplidejs();
-    myWow();
     myScrollspy();
   }, []);
 

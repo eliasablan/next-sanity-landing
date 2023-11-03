@@ -12,7 +12,7 @@ const Services = async () => {
       <div className="container xl:max-w-6xl mx-auto px-4">
         {/* Heading start */}
         <header className="text-center mx-auto mb-12 lg:px-20">
-          <h2 className="text-2xl leading-normal mb-2 font-bold text-black">
+          <h2 className="text-2xl leading-normal mb-2 font-bold text-black fade-up-show">
             What We Do
           </h2>
           <svg
@@ -51,7 +51,7 @@ const Services = async () => {
               style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
             ></line>
           </svg>
-          <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
+          <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2 fade-up-show">
             Save time managing advertising & Content for your business.
           </p>
         </header>
@@ -64,8 +64,7 @@ const Services = async () => {
                 return (
                   <div
                     key={service._id}
-                    className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-                    data-wow-duration="1s"
+                    className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 fade-up-show"
                   >
                     {/* service block */}
                     <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">

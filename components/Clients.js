@@ -5,7 +5,6 @@ function Clients() {
   return (
     <div
       id="clients"
-      // className="section relative py-8 bg-white dark:bg-gray-800"
       className="section relative py-8 bg-white"
     >
       <div className="container xl:max-w-6xl mx-auto px-4">
@@ -14,7 +13,7 @@ function Clients() {
             {/* slider client */}
             <div
               id="post-carousel"
-              className="navslider-hover splide post-carousel"
+              className="navslider-hover splide post-carousel fade-up-show"
             >
               <div className="splide__track">
                 <div className="splide__list grayscale">

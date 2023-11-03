@@ -1324,97 +1324,6 @@ video {
   visibility: hidden !important;
   transition: all 1s ease-in-out;
 }
-/*animated css for Wow js*/
-.animated {
-  animation-duration: 1s;
-  animation-duration: var(--animate-duration);
-  animation-fill-mode: both;
-}
-/*add custom animated css in here*/
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInUp {
-  animation-name: fadeInUp;
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInDown {
-  animation-name: fadeInDown;
-}
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInLeft {
-  animation-name: fadeInLeft;
-}
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100px, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInRight {
-  animation-name: fadeInRight;
-}
-@keyframes flipInX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    transform: perspective(400px);
-  }
-}
-.flipInX {
-  backface-visibility: visible !important;
-  animation-name: flipInX;
-}
 /* // splidejs */
 .splide__container {
   box-sizing: border-box;
@@ -2664,4 +2573,54 @@ iframe.wait-autoplay {
   .xl\:pt-16 {
     padding-top: 4rem;
   }
+}
+
+/* my fade in animations */
+@keyframes fade-up-show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.fade-up-show {
+  view-timeline-name: --fade-up;
+  view-timeline-axis: block;
+
+  animation-timeline: --fade-up;
+  animation-name: fade-up-show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.5s 0.5s backwards;
+}
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.fade-down {
+  animation: fade-down 0.5s 0.5s backwards;
 }

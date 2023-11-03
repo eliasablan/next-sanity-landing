@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="section relative z-0 py-16 md:pt-32 md:pb-20 bg-gray-50"
+      className="section relative z-0 py-16 md:pt-32 md:pb-20 bg-gray-50 fade-up"
     >
       <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="flex flex-wrap flex-row -mx-4 justify-center">
