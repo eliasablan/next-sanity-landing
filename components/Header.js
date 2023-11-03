@@ -13,7 +13,7 @@ const Header = () => {
           <div className="lg:flex lg:justify-between">
             <div className="flex justify-between">
               <div className="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">
-                Tailone
+                Logo
               </div>
               {/* mobile nav */}
               <div className="flex flex-row items-center py-4 lg:py-0">

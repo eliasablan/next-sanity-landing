@@ -11,11 +11,11 @@ function Footer() {
             <div className="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
               <div className="flex items-center mb-2">
                 <span className="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">
-                  Tailone
+                  Logo
                 </span>
                 {/* <!-- <img src="src/img-min/logo.png" alt="LOGO"> --> */}
               </div>
-              <p>Tailwind One Page Template for build One page landing page.</p>
+              <p>One page landing page.</p>
               <ul className="space-x-3 mt-6 mb-6 Lg:mb-0">
                 {/* <!--facebook--> */}
                 <li className="inline-block">
@@ -187,11 +187,17 @@ function Footer() {
 
       {/* <!--Start footer copyright--> */}
       <div className="footer-dark">
-        <div className="container xl:max-w-6xl mx-auto px-4 py-4 border-t border-gray-200 border-opacity-10">
+        <div className="container xl:max-w-6xl mx-auto px-4 py-4 border-t border-gray-600 border-opacity-10">
           <div className="row">
             <div className="col-12 col-md text-center">
               <p className="d-block my-3">
-                Copyright © Your Company | All rights reserved.
+                Application created by{" "}
+                <a href="https://github.com/eliasablan" target="_blank">
+                  <span className="text-gray-600 hover:underline">
+                    Elias Ablan
+                  </span>
+                </a>
+                .
               </p>
             </div>
           </div>
