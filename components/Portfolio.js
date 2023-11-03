@@ -65,7 +65,7 @@ const Portfolio = async () => {
             ? portfolio.map((project) => (
                 <figure
                   key={project._id}
-                  className="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/5 group"
+                  className="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/3 group"
                 >
                   <div className="relative overflow-hidden cursor-pointer mb-6">
                     <Link
