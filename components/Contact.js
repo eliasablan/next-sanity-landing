@@ -7,10 +7,10 @@ function Contact() {
       <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="flex flex-wrap flex-row -mx-4 justify-center">
           <div className="max-w-ful px-4 w-full lg:w-8/12">
-            <div className="bg-gray-50 border-b border-gray-100 w-full p-12 fade-up-show">
+            <div className="bg-gray-50 border-b border-gray-100 w-full p-12">
               {/* section header */}
               <header className="text-center mx-auto mb-12 lg:px-20">
-                <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800">
+                <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 fade-up-show">
                   <span className="font-light">Contact</span> Us
                 </h2>
                 <svg
@@ -49,7 +49,7 @@ function Contact() {
                     style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
                   ></line>
                 </svg>
-                <p className="text-gray-600 leading-relaxed font-light text-xl mx-auto pb-2">
+                <p className="text-gray-600 leading-relaxed font-light text-xl mx-auto pb-2 fade-up-show">
                   Have questions about service, please contact us.
                 </p>
               </header>
@@ -57,7 +57,7 @@ function Contact() {
 
               {/* contact form */}
               <form action="#">
-                <div className="flex flex-wrap flex-row -mx-4">
+                <div className="flex flex-wrap flex-row -mx-4 fade-up-show">
                   <div className="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
                     <label className="inline-block mb-2" htmlFor="name">
                       Your Name
@@ -83,7 +83,7 @@ function Contact() {
                     <div className="validate"></div>
                   </div>
                 </div>
-                <div className="mb-6">
+                <div className="mb-6 fade-up-show">
                   <label className="inline-block mb-2" htmlFor="subject">
                     Subject
                   </label>
@@ -95,7 +95,7 @@ function Contact() {
                   />
                   <div className="validate"></div>
                 </div>
-                <div className="mb-6">
+                <div className="mb-6 fade-up-show">
                   <label className="inline-block mb-2" htmlFor="messages">
                     Message
                   </label>
@@ -107,7 +107,7 @@ function Contact() {
                   ></textarea>
                   <div className="validate"></div>
                 </div>
-                <div className="text-center mb-6">
+                <div className="text-center mb-6 fade-up-show">
                   <Link
                     className="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
                     href="#project"
