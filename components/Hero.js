@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="container xl:max-w-6xl mx-auto px-4">
         <div className="flex flex-wrap flex-row -mx-4 justify-center">
           {/* content */}
-          <div className="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 w-full sm:w-9/12 lg:w-1/2 self-center">
+          <div className="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 mt-6 lg:mt-0 w-full sm:w-9/12 lg:w-1/2 self-center">
             <Image
               src="assets/img/hero.svg"
               width={500}
@@ -24,7 +24,7 @@ const Hero = () => {
 
           {/* text */}
           <div className="flex-shrink max-w-full px-4 w-full md:w-9/12 lg:w-1/2 self-center lg:pr-12">
-            <div className="text-center lg:text-left mt-6 lg:mt-0">
+            <div className="text-center lg:text-left">
               <div className="mb-12">
                 <HeroTypedHeader />
                 <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
@@ -108,7 +108,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                className="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border-b border-gray-800 hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
+                className="py-2.5 px-10 mt-6 lg:mt-0 inline-block text-center leading-normal text-gray-100 bg-black border-b border-gray-800 hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
                 target="_blank"
                 href="https://aribudin.gumroad.com/l/tailone"
               >
