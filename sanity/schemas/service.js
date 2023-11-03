@@ -6,18 +6,13 @@ export default defineType({
   title: "Servicio",
   fields: [
     {
-      name: "logo",
-      type: "array",
-      title: "Logo SVG",
-      of: [
-        {
-          type: "block",
-          styles: [
-            { title: "SVG", value: "svg" },
-            { title: "Ruta", value: "path" },
-          ],
-        },
-      ],
+      title: "Icon",
+      name: "icon",
+      type: "iconPicker",
+      options: {
+        providers: ["fa", "mdi", "hi", "fi", "si"],
+        outputFormat: "react",
+      },
     },
     {
       name: "title",

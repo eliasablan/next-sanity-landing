@@ -1,4 +1,17 @@
 import { getEverything } from "@/sanity/sanity-utils";
+import * as FaIcons from "react-icons/fa"; // Font Awesome Icons
+import * as SIcons from "react-icons/si"; // Simple Icons
+import * as FIcons from "react-icons/fi"; // Feather Icons
+import * as HIcons from "react-icons/hi"; // Hero Icons
+import * as MdIcons from "react-icons/md"; // Material Design Icons
+
+const DynamicIconRenderer = ({ name, provider }) => {
+  if (provider == "fa") return FaIcons[name]; // Font Awesome Icons
+  if (provider == "si") return SIcons[name]; // Simple Icons
+  if (provider == "fi") return FIcons[name]; // Feather Icons
+  if (provider == "hi") return HIcons[name]; // Hero Icons
+  if (provider == "mdi") return MdIcons[name]; // Material Design Icons
+};
 
 const Services = async () => {
   const everything = await getEverything();
@@ -61,6 +74,7 @@ const Services = async () => {
         <div className="flex flex-wrap flex-row -mx-4 text-center">
           {services
             ? services.map((service) => {
+                let Icon = DynamicIconRenderer(service.icon);
                 return (
                   <div
                     key={service._id}
@@ -70,10 +84,7 @@ const Services = async () => {
                     <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                       <div className="inline-block text-gray-900 mb-4">
                         {/* icon */}
-
-                        {/* {service.logo
-                          ? service.logo
-                          : null} */}
+                        <Icon className="h-16 w-16" />
                       </div>
                       <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
                         {service.title}
