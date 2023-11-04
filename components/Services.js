@@ -82,9 +82,9 @@ const Services = async () => {
                   >
                     {/* service block */}
                     <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-                      <div className="inline-block text-gray-900 mb-4">
+                      <div className="inline-block text-gray-700 mb-2">
                         {/* icon */}
-                        <Icon className="h-16 w-16" />
+                        <Icon className="h-11 w-11" />
                       </div>
                       <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
                         {service.title}
