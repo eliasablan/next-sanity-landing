@@ -4,7 +4,6 @@ import { Roboto_Slab } from "next/font/google";
 import "@/public/assets/style/globals.css";
 
 import Providers from "@/components/providers";
-import Header from "@/components/Header";
 import BackToTopButton from "@/components/BackToTopButton";
 import Footer from "@/components/Footer";
 
@@ -29,7 +28,7 @@ export default async function RootLayout({ children }) {
     <html lang="en" className="!scroll-smooth !scroll-pt-16">
       <body className={clsx("text-gray-700", roboto.className)}>
         <Providers everything={everything}>
-          <Header />
+          {/* <Header /> */}
           {children}
           <BackToTopButton />
           <Footer />
