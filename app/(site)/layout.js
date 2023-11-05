@@ -34,7 +34,6 @@ export default async function RootLayout({ children }) {
         )}
       >
         <Providers everything={everything}>
-          {/* <Header /> */}
           {children}
           <BackToTopButton />
           <Footer />
