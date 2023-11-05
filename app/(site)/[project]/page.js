@@ -16,7 +16,7 @@ const Project = async ({ params }) => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-8 h-8 fade-down"
         >
           <path
             strokeLinecap="round"
@@ -26,21 +26,21 @@ const Project = async ({ params }) => {
         </svg>
       </BackToHomeButton>
 
-      <h1 className="pt-6 text-4xl leading-normal font-bold text-gray-800">
+      <h1 className="pt-6 text-4xl leading-normal font-bold text-gray-800 fade-down">
         {project.title}
       </h1>
-      <h2 className="py-2 text-2xl leading-normal font-semibold text-gray-800">
+      <h2 className="py-2 text-2xl leading-normal font-semibold text-gray-800 fade-down">
         {project.category}
       </h2>
       <Image
-        className="rounded-lg border-2 my-6"
+        className="rounded-lg border-2 my-6 fade-up"
         src={project.image_url}
         width={800}
         height={400}
         alt={project.image_alt}
       />
-      <p className="text-lg">{project.description}</p>
-      <h2 className="my-6 text-lg font-semibold text-gray-800">
+      <p className="text-lg fade-up">{project.description}</p>
+      <h2 className="my-6 text-lg font-semibold text-gray-800 fade-up">
         <Date dateString={project.date} />
       </h2>
     </div>
