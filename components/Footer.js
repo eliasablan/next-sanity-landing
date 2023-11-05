@@ -10,9 +10,11 @@ function Footer() {
           <div className="flex flex-wrap flex-row lg:justify-between -mx-3">
             <div className="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
               <div className="flex items-center mb-2">
-                <span className="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">
-                  Logo
-                </span>
+                <Link className="hover:text-gray-800" href="/" title="Home">
+                  <span className="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">
+                    Logo
+                  </span>
+                </Link>
                 {/* <!-- <img src="src/img-min/logo.png" alt="LOGO"> --> */}
               </div>
               <p>One page landing page.</p>
