@@ -19,6 +19,7 @@ const getEverything = async () => {
 const getProjects = async () => {
   return client.fetch(
     groq`*[_type=="portfolio"]{
+      _id,
       title,
       category,
       "slug":slug.current,
