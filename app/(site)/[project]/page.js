@@ -8,7 +8,7 @@ const Project = async ({ params }) => {
   const project = await getProject(params.project);
 
   return (
-    <div className="container xl:max-w-6xl mx-auto px-4 pt-20 mb-6">
+    <div className="container xl:max-w-6xl mx-auto px-4 pt-20 pb-10 mb-6">
       <BackToHomeButton>
         <svg
           xmlns="http://www.w3.org/2000/svg"
