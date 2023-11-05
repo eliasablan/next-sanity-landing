@@ -26,7 +26,13 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang="en" className="!scroll-smooth !scroll-pt-16">
-      <body className={clsx("text-gray-700", roboto.className)}>
+      <body
+        className={clsx(
+          "text-gray-700",
+          roboto.className,
+          "scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-white"
+        )}
+      >
         <Providers everything={everything}>
           {/* <Header /> */}
           {children}
