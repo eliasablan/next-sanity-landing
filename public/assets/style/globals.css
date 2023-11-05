@@ -2609,7 +2609,7 @@ iframe.wait-autoplay {
 }
 
 .fade-up {
-  animation: fade-up 0.5s 0.5s backwards;
+  animation: fade-up 0.5s backwards;
 }
 @keyframes fade-down {
   0% {
@@ -2622,5 +2622,5 @@ iframe.wait-autoplay {
   }
 }
 .fade-down {
-  animation: fade-down 0.5s 0.5s backwards;
+  animation: fade-down 0.5s backwards;
 }
