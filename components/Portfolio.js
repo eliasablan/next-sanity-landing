@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getEverything } from "@/sanity/sanity-utils";
+import { getProjects } from "@/sanity/sanity-utils";
 
 const Portfolio = async () => {
-  const everything = await getEverything();
-  const portfolio = everything.filter((obj) => obj._type == "portfolio");
+  const portfolio = await getProjects();
 
   return (
     <div
@@ -68,15 +67,10 @@ const Portfolio = async () => {
                   className="flex-shrink max-w-full px-3 w-full sm:w-1/2 lg:w-1/3 group fade-up-show"
                 >
                   <div className="relative overflow-hidden cursor-pointer mb-6">
-                    <Link
-                      href="/assets/img/img1.jpg"
-                      data-gallery="gallery1"
-                      data-glightbox={`title: ${project.title}; description: ${project.description}`}
-                      className="glightbox3"
-                    >
+                    <Link href={`/${project.slug}`}>
                       <Image
                         className="block w-full h-auto transform duration-500 grayscale hover:grayscale-0 hover:scale-125"
-                        src="/assets/img/img1.jpg"
+                        src={project.image_url}
                         width={500}
                         height={500}
                         alt="Image Description"

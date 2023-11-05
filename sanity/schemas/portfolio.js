@@ -26,6 +26,23 @@ export default defineType({
       title: "Titulo",
     },
     {
+      name: "slug",
+      type: "slug",
+      title: "Slug",
+      options: {
+        source: "title",
+      },
+    },
+    {
+      name: "date",
+      type: "date",
+      title: "Fecha",
+      options: {
+        dateFormat: "YYYY-MM-DD",
+        calendarTodayLabel: "Today",
+      },
+    },
+    {
       name: "category",
       type: "string",
       title: "Categoria",
