@@ -1,4 +1,5 @@
 import { defineType } from "sanity";
+import DynamicIconRenderer from "@/components/DynamicIconRenderer";
 
 export default defineType({
   name: "team",
@@ -31,20 +32,38 @@ export default defineType({
       title: "Titulo",
     },
     {
-      name: "network",
-      type: "document",
+      name: "rrss",
+      type: "array",
       title: "RRSS",
-      fields: [
+      of: [
         {
-          name: "link",
-          type: "string",
-          title: "Link",
-        },
-        {
-          name: "logo",
-          type: "reference",
-          to: [{ type: "networkLogo" }],
-          title: "Logo",
+          type: "object",
+          fields: [
+            {
+              name: "socialNetwork",
+              type: "reference",
+              to: [{ type: "socialNetwork" }],
+              title: "Red Social",
+            },
+            {
+              name: "username",
+              type: "string",
+              title: "Nombre de Usuario",
+            },
+          ],
+          preview: {
+            select: {
+              icon: "socialNetwork.icon",
+              network: "socialNetwork.name",
+              username: "username",
+            },
+
+            prepare: ({ icon, network, username }) => ({
+              media: <DynamicIconRenderer icon={icon} />,
+              title: username,
+              subtitle: network,
+            }),
+          },
         },
       ],
     },

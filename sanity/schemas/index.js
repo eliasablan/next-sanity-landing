@@ -3,8 +3,7 @@ import service from "./service";
 import portfolio from "./portfolio";
 import client from "./client";
 import team from "./team";
-import social from "./social";
-import networkLogo from "./networkLogo";
+import socialNetwork from "./socialNetwork";
 
 export const schemaTypes = [
   heroHeaderMessage,
@@ -12,6 +11,5 @@ export const schemaTypes = [
   portfolio,
   client,
   team,
-  social,
-  networkLogo,
+  socialNetwork,
 ];
