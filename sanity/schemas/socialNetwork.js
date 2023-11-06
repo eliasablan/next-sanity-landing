@@ -22,8 +22,19 @@ export default defineType({
     },
     {
       name: "base_url",
-      type: "string",
+      type: "url",
       title: "URL base",
+      validation: (Rule) => Rule.required(),
+      //   validation: (Rule) =>
+      //     Rule.custom((base_url) =>
+      //       base_url
+      //         .toLowerCase()
+      //         .match(
+      //           /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/
+      //         )
+      //         ? true
+      //         : "No dejes este campo vacío. Asegúrate de que estas agregando 'http' o 'https' al inicio."
+      //     ),
     },
   ],
   preview: {
@@ -34,7 +45,7 @@ export default defineType({
     },
 
     prepare: ({ icon, name, base_url }) => ({
-      media: <DynamicIconRenderer icon={icon} />,
+      media: icon ? <DynamicIconRenderer icon={icon} /> : null,
       title: name,
       subtitle: base_url,
     }),

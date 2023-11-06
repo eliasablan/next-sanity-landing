@@ -25,6 +25,7 @@ export default defineType({
       name: "title",
       type: "string",
       title: "Titulo",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "slug",
@@ -52,6 +53,7 @@ export default defineType({
       name: "description",
       type: "text",
       title: "Descripcion",
+      validation: (Rule) => Rule.required(),
     },
   ],
   preview: {

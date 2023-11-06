@@ -20,16 +20,19 @@ export default defineType({
           title: "Alt",
         },
       ],
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "name",
       type: "string",
       title: "Nombre",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "title",
       type: "string",
       title: "Titulo",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "rrss",
@@ -59,13 +62,16 @@ export default defineType({
             },
 
             prepare: ({ icon, network, username }) => ({
-              media: <DynamicIconRenderer icon={icon} />,
+              media: icon ? <DynamicIconRenderer icon={icon} /> : undefined,
               title: username,
               subtitle: network,
             }),
           },
         },
       ],
+      options: {
+        sortable: false,
+      },
     },
   ],
   preview: {

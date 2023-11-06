@@ -19,6 +19,7 @@ export default defineType({
           title: "Alt",
         },
       ],
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "name",

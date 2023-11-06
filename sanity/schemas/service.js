@@ -14,11 +14,13 @@ export default defineType({
         providers: ["fa", "mdi", "hi", "fi", "si"],
         outputFormat: "react",
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "title",
       type: "string",
       title: "Titulo",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "description",
@@ -34,7 +36,7 @@ export default defineType({
     },
 
     prepare: ({ icon, title, description }) => ({
-      media: <DynamicIconRenderer icon={icon} />,
+      media: icon ? <DynamicIconRenderer icon={icon} /> : undefined,
       title,
       subtitle: description,
     }),
