@@ -1,6 +1,6 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
+'use client';
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const BackToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
@@ -17,9 +17,9 @@ const BackToTopButton = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -27,7 +27,7 @@ const BackToTopButton = () => {
     <Link
       href="#"
       className={`back-top fixed bottom-4 right-4 rounded border border-gray-100 bg-gray-100 p-4 text-gray-500 ${
-        showButton ? "block" : "hidden"
+        showButton ? 'block' : 'hidden'
       }`}
     >
       <svg

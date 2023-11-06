@@ -1,29 +1,29 @@
-import { defineType } from "sanity";
-import DynamicIconRenderer from "@/components/DynamicIconRenderer";
+import { defineType } from 'sanity';
+import DynamicIconRenderer from '@/components/DynamicIconRenderer';
 
 export default defineType({
-  name: "socialNetwork",
-  type: "document",
-  title: "Red Social",
+  name: 'socialNetwork',
+  type: 'document',
+  title: 'Red Social',
   fields: [
     {
-      name: "name",
-      type: "string",
-      title: "Red Social",
+      name: 'name',
+      type: 'string',
+      title: 'Red Social',
     },
     {
-      title: "Icono",
-      name: "icon",
-      type: "iconPicker",
+      title: 'Icono',
+      name: 'icon',
+      type: 'iconPicker',
       options: {
-        providers: ["fa", "mdi", "hi", "fi", "si"],
-        outputFormat: "react",
+        providers: ['fa', 'mdi', 'hi', 'fi', 'si'],
+        outputFormat: 'react',
       },
     },
     {
-      name: "base_url",
-      type: "url",
-      title: "URL base",
+      name: 'base_url',
+      type: 'url',
+      title: 'URL base',
       validation: (Rule) => Rule.required(),
       //   validation: (Rule) =>
       //     Rule.custom((base_url) =>
@@ -39,9 +39,9 @@ export default defineType({
   ],
   preview: {
     select: {
-      icon: "icon",
-      name: "name",
-      base_url: "base_url",
+      icon: 'icon',
+      name: 'name',
+      base_url: 'base_url',
     },
 
     prepare: ({ icon, name, base_url }) => ({

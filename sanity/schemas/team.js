@@ -1,68 +1,70 @@
-import { defineType } from "sanity";
-import DynamicIconRenderer from "@/components/DynamicIconRenderer";
+import { defineType } from 'sanity';
+import DynamicIconRenderer from '@/components/DynamicIconRenderer';
 
 export default defineType({
-  name: "team",
-  type: "document",
-  title: "Equipo",
+  name: 'team',
+  type: 'document',
+  title: 'Equipo',
   fields: [
     {
-      name: "image",
-      type: "image",
-      title: "Imagen",
+      name: 'image',
+      type: 'image',
+      title: 'Imagen',
       options: {
         hotspot: true,
       },
       fields: [
         {
-          name: "alt",
-          type: "string",
-          title: "Alt",
+          name: 'alt',
+          type: 'string',
+          title: 'Alt',
         },
       ],
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "name",
-      type: "string",
-      title: "Nombre",
+      name: 'name',
+      type: 'string',
+      title: 'Nombre',
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "title",
-      type: "string",
-      title: "Titulo",
+      name: 'title',
+      type: 'string',
+      title: 'Titulo',
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "rrss",
-      type: "array",
-      title: "RRSS",
+      name: 'rrss',
+      type: 'array',
+      title: 'RRSS',
       of: [
         {
-          type: "object",
+          type: 'object',
           fields: [
             {
-              name: "socialNetwork",
-              type: "reference",
-              to: [{ type: "socialNetwork" }],
-              title: "Red Social",
+              name: 'socialNetwork',
+              type: 'reference',
+              to: [{ type: 'socialNetwork' }],
+              title: 'Red Social',
             },
             {
-              name: "username",
-              type: "string",
-              title: "Nombre de Usuario",
+              name: 'username',
+              type: 'string',
+              title: 'Nombre de Usuario',
             },
           ],
           preview: {
             select: {
-              icon: "socialNetwork.icon",
-              network: "socialNetwork.name",
-              username: "username",
+              icon: 'socialNetwork.icon',
+              network: 'socialNetwork.name',
+              username: 'username',
             },
 
             prepare: ({ icon, network, username }) => ({
-              media: icon ? <DynamicIconRenderer icon={icon} /> : undefined,
+              media: icon ? (
+                <DynamicIconRenderer icon={icon} />
+              ) : undefined,
               title: username,
               subtitle: network,
             }),
@@ -76,10 +78,10 @@ export default defineType({
   ],
   preview: {
     select: {
-      image: "image",
-      name: "name",
-      title: "title",
-      category: "category",
+      image: 'image',
+      name: 'name',
+      title: 'title',
+      category: 'category',
     },
 
     prepare: ({ image, name, title }) => ({

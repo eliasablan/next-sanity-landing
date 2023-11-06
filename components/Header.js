@@ -1,7 +1,7 @@
-"use client";
-import { useState } from "react";
-import clsx from "clsx";
-import Link from "next/link";
+'use client';
+import { useState } from 'react';
+import clsx from 'clsx';
+import Link from 'next/link';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,8 +67,8 @@ const Header = () => {
               {/* <ul className="navbar bg-white lg:bg-transparent w-full hidden text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold"> */}
               <ul
                 className={clsx(
-                  "navbar w-full items-center bg-white text-center text-sm font-bold text-gray-900 lg:flex lg:flex-row lg:bg-transparent lg:text-left",
-                  mobileMenuOpen ? "" : "hidden",
+                  'navbar w-full items-center bg-white text-center text-sm font-bold text-gray-900 lg:flex lg:flex-row lg:bg-transparent lg:text-left',
+                  mobileMenuOpen ? '' : 'hidden',
                 )}
               >
                 <li className="relative hover:text-black">

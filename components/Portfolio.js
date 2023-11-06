@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { getProjects } from "@/sanity/sanity-utils";
+import Image from 'next/image';
+import Link from 'next/link';
+import { getProjects } from '@/sanity/sanity-utils';
 
 const Portfolio = async () => {
   const portfolio = await getProjects();
@@ -22,7 +22,7 @@ const Portfolio = async () => {
             x="0px"
             y="0px"
             viewBox="0 0 100 60"
-            style={{ margin: "0 auto", height: "35px" }}
+            style={{ margin: '0 auto', height: '35px' }}
           >
             <circle
               cx="50.1"
@@ -30,9 +30,9 @@ const Portfolio = async () => {
               r="5"
               className="stroke-primary"
               style={{
-                fill: "transparent",
-                strokeWidth: "2",
-                strokeMiterlimit: "10",
+                fill: 'transparent',
+                strokeWidth: '2',
+                strokeMiterlimit: '10',
               }}
             ></circle>
             <line
@@ -53,7 +53,8 @@ const Portfolio = async () => {
             ></line>
           </svg>
           <p className="fade-up-show mx-auto pb-2 text-xl font-light leading-relaxed text-gray-500">
-            We create engaging experiences that are innovatingand beautiful.
+            We create engaging experiences that are innovatingand
+            beautiful.
           </p>
         </header>
         {/* End heading */}
@@ -79,7 +80,9 @@ const Portfolio = async () => {
                         <h3 className="my-1 text-base font-semibold leading-normal text-white">
                           {project.title}
                         </h3>
-                        <small className="d-block">{project.category}</small>
+                        <small className="d-block">
+                          {project.category}
+                        </small>
                       </div>
                     </Link>
                   </div>

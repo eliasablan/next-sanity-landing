@@ -1,16 +1,23 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 function Footer() {
   return (
     <footer className="bg-gray-50 text-gray-700">
       {/* <!--Footer content--> */}
-      <div id="footer-content" className="relative pb-6 pt-8 xl:pb-12 xl:pt-16">
+      <div
+        id="footer-content"
+        className="relative pb-6 pt-8 xl:pb-12 xl:pt-16"
+      >
         <div className="container mx-auto overflow-hidden px-4 xl:max-w-6xl">
           <div className="-mx-3 flex flex-row flex-wrap lg:justify-between">
             <div className="w-full max-w-full flex-shrink px-3 lg:w-2/5 lg:pr-16">
               <div className="mb-2 flex items-center">
-                <Link className="hover:text-gray-800" href="/" title="Home">
+                <Link
+                  className="hover:text-gray-800"
+                  href="/"
+                  title="Home"
+                >
                   <span className="mb-2 mt-2 text-3xl font-bold leading-normal text-gray-800">
                     Logo
                   </span>
@@ -193,7 +200,7 @@ function Footer() {
           <div className="row">
             <div className="col-12 col-md text-center">
               <p className="d-block my-3">
-                Application created by{" "}
+                Application created by{' '}
                 <a href="https://github.com/eliasablan" target="_blank">
                   <span className="text-gray-600 hover:underline">
                     Elias Ablan

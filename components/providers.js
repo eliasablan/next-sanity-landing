@@ -1,9 +1,9 @@
-"use client";
-import { useEffect, createContext } from "react";
+'use client';
+import { useEffect, createContext } from 'react';
 
 // import GLightbox from "glightbox";
 
-import Splide from "@splidejs/splide";
+import Splide from '@splidejs/splide';
 
 export const AppContext = createContext({});
 
@@ -36,14 +36,14 @@ const Providers = ({ children, everything }) => {
     // splidejs
     const mySplidejs = function () {
       // mySplidejs
-      const postslider_class = document.querySelector("#post-carousel");
+      const postslider_class = document.querySelector('#post-carousel');
       if (postslider_class != null) {
         const postslider = new Splide(postslider_class, {
           rewind: true,
           pagination: true,
           arrows: true,
-          type: "loop",
-          drag: "free",
+          type: 'loop',
+          drag: 'free',
           perPage: 6,
           perMove: 1,
           gap: 24,
@@ -68,14 +68,14 @@ const Providers = ({ children, everything }) => {
       var scrollpos =
         document.body.scrollTop || document.documentElement.scrollTop;
       var nav_height = 80;
-      var main_nav = document.querySelector(".main-nav");
+      var main_nav = document.querySelector('.main-nav');
 
       // navbar on scroll
       var add_class_on_scroll = function add_class_on_scroll() {
-        return main_nav.classList.add("navbar-scrolled");
+        return main_nav.classList.add('navbar-scrolled');
       };
       var remove_class_on_scroll = function remove_class_on_scroll() {
-        return main_nav.classList.remove("navbar-scrolled");
+        return main_nav.classList.remove('navbar-scrolled');
       };
 
       var navCustom = function navCustom() {
@@ -90,7 +90,7 @@ const Providers = ({ children, everything }) => {
       };
 
       var navCustomone = function navCustomone() {
-        var section = document.querySelectorAll(".section");
+        var section = document.querySelectorAll('.section');
         if (section != null) {
           var sections = {};
           var i = 0;
@@ -101,16 +101,17 @@ const Providers = ({ children, everything }) => {
 
           window.onscroll = function () {
             var scrollPosition =
-              document.documentElement.scrollTop || document.body.scrollTop;
+              document.documentElement.scrollTop ||
+              document.body.scrollTop;
 
             for (i in sections) {
               if (sections[i] <= scrollPosition + nav_height) {
                 document
-                  .querySelector(".navbar>li>.active")
-                  .classList.remove("active");
+                  .querySelector('.navbar>li>.active')
+                  .classList.remove('active');
                 document
-                  .querySelector("a[href*=" + i + "]")
-                  .classList.add("active");
+                  .querySelector('a[href*=' + i + ']')
+                  .classList.add('active');
               }
             }
           };
@@ -118,7 +119,7 @@ const Providers = ({ children, everything }) => {
       };
 
       // if nav start not in top and not scroll
-      window.addEventListener("load", function () {
+      window.addEventListener('load', function () {
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
         navCustom();
@@ -126,7 +127,7 @@ const Providers = ({ children, everything }) => {
       });
 
       // if nav scroll
-      window.addEventListener("scroll", function () {
+      window.addEventListener('scroll', function () {
         navCustom();
         navCustomone();
       });
@@ -139,7 +140,9 @@ const Providers = ({ children, everything }) => {
   }, []);
 
   return (
-    <AppContext.Provider value={everything}>{children}</AppContext.Provider>
+    <AppContext.Provider value={everything}>
+      {children}
+    </AppContext.Provider>
   );
 };
 

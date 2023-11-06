@@ -1,12 +1,12 @@
-"use client";
-import Typed from "typed.js";
-import { useEffect, useRef, useContext } from "react";
+'use client';
+import Typed from 'typed.js';
+import { useEffect, useRef, useContext } from 'react';
 
-import { AppContext } from "./providers";
+import { AppContext } from './providers';
 
 function HeroTypedHeader() {
   const sanityData = useContext(AppContext).filter(
-    (obj) => obj._type == "heroHeaderMessage",
+    (obj) => obj._type == 'heroHeaderMessage',
   );
 
   // Create reference to store the DOM element containing the animation

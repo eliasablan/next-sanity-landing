@@ -1,6 +1,6 @@
-import Image from "next/image";
-import HeroTypedHeader from "./HeroTypedHeader";
-import Link from "next/link";
+import Image from 'next/image';
+import HeroTypedHeader from './HeroTypedHeader';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -28,8 +28,8 @@ const Hero = () => {
               <div className="mb-12">
                 <HeroTypedHeader />
                 <p className="mx-auto pb-2 text-xl font-light leading-relaxed text-gray-500">
-                  We would direct you to limitless ideas and move your brand
-                  into a global landscape.
+                  We would direct you to limitless ideas and move your
+                  brand into a global landscape.
                 </p>
               </div>
               <Link
@@ -47,11 +47,11 @@ const Hero = () => {
                   <path
                     d="M304,384V360c0-29,31.54-56.43,52-76,28.84-27.57,44-64.61,44-108,0-80-63.73-144-144-144A143.6,143.6,0,0,0,112,176c0,41.84,15.81,81.39,44,108,20.35,19.21,52,46.7,52,76v24"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                   <line
@@ -60,11 +60,11 @@ const Hero = () => {
                     x2="288"
                     y2="480"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                   <line
@@ -73,11 +73,11 @@ const Hero = () => {
                     x2="304"
                     y2="432"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                   <line
@@ -86,21 +86,21 @@ const Hero = () => {
                     x2="256"
                     y2="256"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                   <path
                     d="M294,240s-21.51,16-38,16-38-16-38-16"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                 </svg>
@@ -128,21 +128,21 @@ const Hero = () => {
                     rx="40"
                     ry="40"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                   <polyline
                     points="112 160 256 272 400 160"
                     style={{
-                      fill: "none",
-                      stroke: "currentColor",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "32px",
+                      fill: 'none',
+                      stroke: 'currentColor',
+                      strokeLinecap: 'round',
+                      strokeLinejoin: 'round',
+                      strokeWidth: '32px',
                     }}
                   />
                 </svg>

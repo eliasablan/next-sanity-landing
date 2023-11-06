@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 function Contact() {
   return (
@@ -19,7 +19,7 @@ function Contact() {
                   x="0px"
                   y="0px"
                   viewBox="0 0 100 60"
-                  style={{ margin: "0 auto", height: "35px" }}
+                  style={{ margin: '0 auto', height: '35px' }}
                 >
                   <circle
                     cx="50.1"
@@ -27,9 +27,9 @@ function Contact() {
                     r="5"
                     className="stroke-primary"
                     style={{
-                      fill: "transparent",
-                      strokeWidth: "2",
-                      strokeMiterlimit: "10",
+                      fill: 'transparent',
+                      strokeWidth: '2',
+                      strokeMiterlimit: '10',
                     }}
                   ></circle>
                   <line
@@ -128,21 +128,21 @@ function Contact() {
                         rx="40"
                         ry="40"
                         style={{
-                          fill: "none",
-                          stroke: "currentColor",
-                          strokeLinecap: "round",
-                          strokeLinejoin: "round",
-                          strokeWidth: "32px",
+                          fill: 'none',
+                          stroke: 'currentColor',
+                          strokeLinecap: 'round',
+                          strokeLinejoin: 'round',
+                          strokeWidth: '32px',
                         }}
                       />
                       <polyline
                         points="112 160 256 272 400 160"
                         style={{
-                          fill: "none",
-                          stroke: "currentColor",
-                          strokeLinecap: "round",
-                          strokeLinejoin: "round",
-                          strokeWidth: "32px",
+                          fill: 'none',
+                          stroke: 'currentColor',
+                          strokeLinecap: 'round',
+                          strokeLinejoin: 'round',
+                          strokeWidth: '32px',
                         }}
                       />
                     </svg>

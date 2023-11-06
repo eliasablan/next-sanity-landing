@@ -1,10 +1,10 @@
-import { createClient, groq } from "next-sanity";
+import { createClient, groq } from 'next-sanity';
 
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  title: "Dummy Landing Web",
-  apiVersion: "2023-10-30",
+  title: 'Dummy Landing Web',
+  apiVersion: '2023-10-30',
   useCdn: true,
 });
 
@@ -12,7 +12,7 @@ const getEverything = async () => {
   return client.fetch(
     groq`*[_type!="portfolio"]{
       ...,
-    }`
+    }`,
   );
 };
 
@@ -32,7 +32,7 @@ const getFullTeam = async () => {
         },
         username
       },
-    }`
+    }`,
   );
 };
 
@@ -46,7 +46,7 @@ const getProjects = async () => {
       "image_crop": image.crop,
       "image_url": image.asset->url,
       "image_alt": image.alt,
-    }`
+    }`,
   );
 };
 const getProject = async (slug) => {
@@ -62,7 +62,7 @@ const getProject = async (slug) => {
       "image_url": image.asset->url,
       "image_alt": image.alt,
     }`,
-    { slug }
+    { slug },
   );
 };
 

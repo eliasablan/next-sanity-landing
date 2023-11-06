@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { getProject } from "@/sanity/sanity-utils";
+import Image from 'next/image';
+import { getProject } from '@/sanity/sanity-utils';
 
-import { DateJSX } from "@/components/date";
-import BackToHomeButton from "@/components/BackToHomeButton";
+import { DateJSX } from '@/components/date';
+import BackToHomeButton from '@/components/BackToHomeButton';
 
 const Project = async ({ params }) => {
   const project = await getProject(params.project);

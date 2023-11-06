@@ -1,14 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { getFullTeam } from "@/sanity/sanity-utils";
-import DynamicIconRenderer from "./DynamicIconRenderer";
+import { getFullTeam } from '@/sanity/sanity-utils';
+import DynamicIconRenderer from './DynamicIconRenderer';
 
 const Team = async () => {
   const team = await getFullTeam();
 
   return (
-    <div id="team" className="section relative bg-white pb-8 pt-20 md:pt-16">
+    <div
+      id="team"
+      className="section relative bg-white pb-8 pt-20 md:pt-16"
+    >
       <div className="container mx-auto px-4 xl:max-w-6xl">
         {/* section header */}
         <header className="mx-auto mb-12 text-center">
@@ -21,7 +24,7 @@ const Team = async () => {
             x="0px"
             y="0px"
             viewBox="0 0 100 60"
-            style={{ margin: "0 auto", height: "35px" }}
+            style={{ margin: '0 auto', height: '35px' }}
           >
             <circle
               cx="50.1"
@@ -29,9 +32,9 @@ const Team = async () => {
               r="5"
               className="stroke-primary"
               style={{
-                fill: "transparent",
-                strokeWidth: "2",
-                strokeMiterlimit: "10",
+                fill: 'transparent',
+                strokeWidth: '2',
+                strokeMiterlimit: '10',
               }}
             ></circle>
             <line

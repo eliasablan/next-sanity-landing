@@ -1,5 +1,5 @@
-import { getEverything } from "@/sanity/sanity-utils";
-import DynamicIconRenderer from "./DynamicIconRenderer";
+import { getEverything } from '@/sanity/sanity-utils';
+import DynamicIconRenderer from './DynamicIconRenderer';
 // import * as FaIcons from "react-icons/fa"; // Font Awesome Icons
 // import * as SIcons from "react-icons/si"; // Simple Icons
 // import * as FIcons from "react-icons/fi"; // Feather Icons
@@ -16,7 +16,7 @@ import DynamicIconRenderer from "./DynamicIconRenderer";
 
 const Services = async () => {
   const everything = await getEverything();
-  const services = everything.filter((obj) => obj._type == "service");
+  const services = everything.filter((obj) => obj._type == 'service');
 
   return (
     <div
@@ -35,7 +35,7 @@ const Services = async () => {
             x="0px"
             y="0px"
             viewBox="0 0 100 60"
-            style={{ margin: "0 auto", height: "35px" }}
+            style={{ margin: '0 auto', height: '35px' }}
           >
             <circle
               cx="50.1"
@@ -43,9 +43,9 @@ const Services = async () => {
               r="5"
               className="stroke-primary"
               style={{
-                fill: "transparent",
-                strokeWidth: "2",
-                strokeMiterlimit: "10",
+                fill: 'transparent',
+                strokeWidth: '2',
+                strokeMiterlimit: '10',
               }}
             ></circle>
             <line
@@ -96,7 +96,7 @@ const Services = async () => {
                   {/* end service block */}
                 </div>
               ))
-            : ""}
+            : ''}
         </div>
         {/* end row */}
       </div>
