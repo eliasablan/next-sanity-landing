@@ -26,7 +26,7 @@ const BackToTopButton = () => {
   return (
     <Link
       href="#"
-      className={`back-top fixed p-4 rounded bg-gray-100 border border-gray-100 text-gray-500 right-4 bottom-4 ${
+      className={`back-top fixed bottom-4 right-4 rounded border border-gray-100 bg-gray-100 p-4 text-gray-500 ${
         showButton ? "block" : "hidden"
       }`}
     >

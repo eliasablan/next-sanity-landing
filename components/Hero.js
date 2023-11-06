@@ -6,39 +6,39 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="section relative z-0 py-16 md:pt-32 md:pb-20 bg-gray-50 fade-up"
+      className="section fade-up relative z-0 bg-gray-50 py-16 md:pb-20 md:pt-32"
     >
-      <div className="container xl:max-w-6xl mx-auto px-4">
-        <div className="flex flex-wrap flex-row -mx-4 justify-center">
+      <div className="container mx-auto px-4 xl:max-w-6xl">
+        <div className="-mx-4 flex flex-row flex-wrap justify-center">
           {/* content */}
-          <div className="flex-shrink max-w-full px-4 sm:px-12 lg:px-18 mt-6 lg:mt-0 w-full sm:w-9/12 lg:w-1/2 self-center">
+          <div className="lg:px-18 mt-6 w-full max-w-full flex-shrink self-center px-4 sm:w-9/12 sm:px-12 lg:mt-0 lg:w-1/2">
             <Image
               src="assets/img/hero.svg"
               width={500}
               height={500}
-              className="w-full max-w-full h-auto"
+              className="h-auto w-full max-w-full"
               alt="creative agency"
             />
           </div>
           {/* end content */}
 
           {/* text */}
-          <div className="flex-shrink max-w-full px-4 w-full md:w-9/12 lg:w-1/2 self-center lg:pr-12">
+          <div className="w-full max-w-full flex-shrink self-center px-4 md:w-9/12 lg:w-1/2 lg:pr-12">
             <div className="text-center lg:text-left">
               <div className="mb-12">
                 <HeroTypedHeader />
-                <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
+                <p className="mx-auto pb-2 text-xl font-light leading-relaxed text-gray-500">
                   We would direct you to limitless ideas and move your brand
                   into a global landscape.
                 </p>
               </div>
               <Link
-                className="py-2.5 px-10 inline-block text-center leading-normal text-gray-900 bg-white border-b border-gray-100 hover:text-black hover:ring-0 focus:outline-none focus:ring-0 mr-4"
+                className="mr-4 inline-block border-b border-gray-100 bg-white px-10 py-2.5 text-center leading-normal text-gray-900 hover:text-black hover:ring-0 focus:outline-none focus:ring-0"
                 href="#portfolio"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="inline-block mr-1"
+                  className="mr-1 inline-block"
                   width="1.5rem"
                   height="1.5rem"
                   fill="currentColor"
@@ -108,7 +108,7 @@ const Hero = () => {
               </Link>
 
               <Link
-                className="py-2.5 px-10 mt-6 lg:mt-0 inline-block text-center leading-normal text-gray-100 bg-black border-b border-gray-800 hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
+                className="mt-6 inline-block border-b border-gray-800 bg-black px-10 py-2.5 text-center leading-normal text-gray-100 hover:text-white hover:ring-0 focus:outline-none focus:ring-0 lg:mt-0"
                 target="_blank"
                 href="https://aribudin.gumroad.com/l/tailone"
               >
@@ -116,7 +116,7 @@ const Hero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.5rem"
                   height="1.5rem"
-                  className="inline-block mr-1"
+                  className="mr-1 inline-block"
                   fill="currentColor"
                   viewBox="0 0 512 512"
                 >

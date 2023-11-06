@@ -8,11 +8,11 @@ const Team = async () => {
   const team = await getFullTeam();
 
   return (
-    <div id="team" className="section relative pt-20 pb-8 md:pt-16 bg-white">
-      <div className="container xl:max-w-6xl mx-auto px-4">
+    <div id="team" className="section relative bg-white pb-8 pt-20 md:pt-16">
+      <div className="container mx-auto px-4 xl:max-w-6xl">
         {/* section header */}
-        <header className="text-center mx-auto mb-12">
-          <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 fade-up-show">
+        <header className="mx-auto mb-12 text-center">
+          <h2 className="fade-up-show mb-2 text-2xl font-bold leading-normal text-gray-800">
             <span className="font-light">Our</span> Team
           </h2>
           <svg
@@ -55,33 +55,33 @@ const Team = async () => {
         {/* end section header */}
 
         {/* row */}
-        <div className="flex flex-wrap flex-row -mx-4 justify-center">
+        <div className="-mx-4 flex flex-row flex-wrap justify-center">
           {team
             ? team.map((teammate) => (
                 <div
                   key={teammate._id}
-                  className="flex-shrink max-w-full px-4 w-2/3 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6 fade-up-show"
+                  className="fade-up-show w-2/3 max-w-full flex-shrink px-4 sm:w-1/2 md:w-5/12 lg:w-1/4 xl:px-6"
                 >
-                  <div className="relative overflow-hidden bg-white mb-12 hover-grayscale-0">
+                  <div className="hover-grayscale-0 relative mb-12 overflow-hidden bg-white">
                     {/* team block */}
                     <div className="relative overflow-hidden px-6">
                       <Image
                         src={teammate.image_url}
                         width={200}
                         height={200}
-                        className="max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale"
+                        className="mx-auto h-auto max-w-full rounded-full bg-gray-50 grayscale"
                         alt={teammate.image_alt}
                       />
                     </div>
                     <div className="pt-6 text-center">
-                      <p className="text-lg leading-normal font-bold mb-1">
+                      <p className="mb-1 text-lg font-bold leading-normal">
                         {teammate.name}
                       </p>
-                      <p className="text-gray-500 leading-relaxed font-light">
+                      <p className="font-light leading-relaxed text-gray-500">
                         {teammate.title}
                       </p>
                       {/* social icon */}
-                      <div className="mt-2 mb-5 space-x-2">
+                      <div className="mb-5 mt-2 space-x-2">
                         {teammate.rrss
                           ? teammate.rrss.map((rrss) => (
                               <Link
@@ -90,7 +90,7 @@ const Team = async () => {
                                 aria-label="Twitter link"
                                 href={new URL(
                                   rrss.username,
-                                  rrss.socialNetwork.base_url
+                                  rrss.socialNetwork.base_url,
                                 ).toString()}
                               >
                                 <DynamicIconRenderer

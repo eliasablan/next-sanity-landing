@@ -8,7 +8,7 @@ const Project = async ({ params }) => {
   const project = await getProject(params.project);
 
   return (
-    <div className="container xl:max-w-6xl mx-auto px-4 pt-20 pb-10 mb-6">
+    <div className="container mx-auto mb-6 px-4 pb-10 pt-20 xl:max-w-6xl">
       <BackToHomeButton>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const Project = async ({ params }) => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8 fade-down"
+          className="fade-down h-8 w-8"
         >
           <path
             strokeLinecap="round"
@@ -26,21 +26,21 @@ const Project = async ({ params }) => {
         </svg>
       </BackToHomeButton>
 
-      <h1 className="pt-6 text-4xl leading-normal font-bold text-gray-800 fade-down">
+      <h1 className="fade-down pt-6 text-4xl font-bold leading-normal text-gray-800">
         {project.title}
       </h1>
-      <h2 className="py-2 text-2xl leading-normal font-semibold text-gray-800 fade-down">
+      <h2 className="fade-down py-2 text-2xl font-semibold leading-normal text-gray-800">
         {project.category}
       </h2>
       <Image
-        className="rounded-lg border-2 my-6 fade-up"
+        className="fade-up my-6 rounded-lg border-2"
         src={project.image_url}
         width={800}
         height={400}
         alt={project.image_alt}
       />
-      <p className="text-lg fade-up">{project.description}</p>
-      <h2 className="my-6 text-lg font-semibold text-gray-800 fade-up">
+      <p className="fade-up text-lg">{project.description}</p>
+      <h2 className="fade-up my-6 text-lg font-semibold text-gray-800">
         <DateJSX dateString={project.date} />
       </h2>
     </div>

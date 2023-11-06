@@ -6,7 +6,7 @@ import { AppContext } from "./providers";
 
 function HeroTypedHeader() {
   const sanityData = useContext(AppContext).filter(
-    (obj) => obj._type == "heroHeaderMessage"
+    (obj) => obj._type == "heroHeaderMessage",
   );
 
   // Create reference to store the DOM element containing the animation
@@ -28,7 +28,7 @@ function HeroTypedHeader() {
   }, []);
 
   return (
-    <h1 className="text-4xl leading-normal text-black font-bold mb-4">
+    <h1 className="mb-4 text-4xl font-bold leading-normal text-black">
       We are a Digital Agency
       <br />
       serve <span ref={el} />

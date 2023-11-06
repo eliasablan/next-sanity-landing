@@ -7,21 +7,21 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fade-down fixed top-0 left-0 right-0 z-40">
+    <header className="fade-down fixed left-0 right-0 top-0 z-40">
       <nav className="main-nav bg-white">
-        <div className="container xl:max-w-6xl mx-auto px-4">
+        <div className="container mx-auto px-4 xl:max-w-6xl">
           <div className="lg:flex lg:justify-between">
             <div className="flex justify-between">
-              <div className="mx-w-10 text-4xl font-bold capitalize text-gray-900 flex items-center">
+              <div className="mx-w-10 flex items-center text-4xl font-bold capitalize text-gray-900">
                 Logo
               </div>
               {/* mobile nav */}
               <div className="flex flex-row items-center py-4 lg:py-0">
-                <div className="relative text-gray-900 hover:text-black block lg:hidden">
+                <div className="relative block text-gray-900 hover:text-black lg:hidden">
                   <button
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                     type="button"
-                    className="menu-mobile block py-3 px-6 border-b-2 border-transparent"
+                    className="menu-mobile block border-b-2 border-transparent px-6 py-3"
                   >
                     <span className="sr-only">Mobile menu</span>
                     <svg
@@ -67,14 +67,14 @@ const Header = () => {
               {/* <ul className="navbar bg-white lg:bg-transparent w-full hidden text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold"> */}
               <ul
                 className={clsx(
-                  "navbar bg-white lg:bg-transparent w-full text-center lg:text-left lg:flex lg:flex-row text-gray-900 text-sm items-center font-bold",
-                  mobileMenuOpen ? "" : "hidden"
+                  "navbar w-full items-center bg-white text-center text-sm font-bold text-gray-900 lg:flex lg:flex-row lg:bg-transparent lg:text-left",
+                  mobileMenuOpen ? "" : "hidden",
                 )}
               >
                 <li className="relative hover:text-black">
                   <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="active block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    className="active block border-b-2 border-transparent px-6 py-3 lg:py-7"
                     href="#hero"
                   >
                     Home
@@ -83,7 +83,7 @@ const Header = () => {
                 <li className="relative hover:text-black">
                   <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    className="block border-b-2 border-transparent px-6 py-3 lg:py-7"
                     href="#services"
                   >
                     What we do
@@ -92,7 +92,7 @@ const Header = () => {
                 <li className="relative hover:text-black">
                   <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    className="block border-b-2 border-transparent px-6 py-3 lg:py-7"
                     href="#portfolio"
                   >
                     Our works
@@ -101,7 +101,7 @@ const Header = () => {
                 <li className="relative hover:text-black">
                   <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    className="block border-b-2 border-transparent px-6 py-3 lg:py-7"
                     href="#clients"
                   >
                     Clients
@@ -110,7 +110,7 @@ const Header = () => {
                 <li className="relative hover:text-black">
                   <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    className="block border-b-2 border-transparent px-6 py-3 lg:py-7"
                     href="#team"
                   >
                     Team
@@ -119,7 +119,7 @@ const Header = () => {
                 <li className="relative hover:text-black">
                   <Link
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="block py-3 lg:py-7 px-6 border-b-2 border-transparent"
+                    className="block border-b-2 border-transparent px-6 py-3 lg:py-7"
                     href="#contact"
                   >
                     Contact

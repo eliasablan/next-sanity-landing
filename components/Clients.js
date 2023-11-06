@@ -3,12 +3,9 @@ import Link from "next/link";
 
 function Clients() {
   return (
-    <div
-      id="clients"
-      className="section relative py-8 bg-white"
-    >
-      <div className="container xl:max-w-6xl mx-auto px-4">
-        <div className="lex flex-wrap flex-row -mx-4 justify-center">
+    <div id="clients" className="section relative bg-white py-8">
+      <div className="container mx-auto px-4 xl:max-w-6xl">
+        <div className="lex -mx-4 flex-row flex-wrap justify-center">
           <div className="w-full px-4">
             {/* slider client */}
             <div
@@ -18,10 +15,10 @@ function Clients() {
               <div className="splide__track">
                 <div className="splide__list grayscale">
                   <div className="splide__slide">
-                    <div className="w-full px-4 text-center pb-3">
+                    <div className="w-full px-4 pb-3 text-center">
                       <Link href="#" target="_blank">
                         <Image
-                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          className="mx-auto h-auto max-w-full opacity-80 grayscale hover:opacity-100"
                           src="/assets/img/img1.png"
                           width={500}
                           height={500}
@@ -31,10 +28,10 @@ function Clients() {
                     </div>
                   </div>
                   <div className="splide__slide">
-                    <div className="w-full px-4 text-center pb-3">
+                    <div className="w-full px-4 pb-3 text-center">
                       <Link href="#" target="_blank">
                         <Image
-                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          className="mx-auto h-auto max-w-full opacity-80 grayscale hover:opacity-100"
                           src="/assets/img/img2.png"
                           width={500}
                           height={500}
@@ -44,10 +41,10 @@ function Clients() {
                     </div>
                   </div>
                   <div className="splide__slide">
-                    <div className="w-full px-4 text-center pb-3">
+                    <div className="w-full px-4 pb-3 text-center">
                       <Link href="#" target="_blank">
                         <Image
-                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          className="mx-auto h-auto max-w-full opacity-80 grayscale hover:opacity-100"
                           src="/assets/img/img3.png"
                           width={500}
                           height={500}
@@ -57,10 +54,10 @@ function Clients() {
                     </div>
                   </div>
                   <div className="splide__slide">
-                    <div className="w-full px-4 text-center pb-3">
+                    <div className="w-full px-4 pb-3 text-center">
                       <Link href="#" target="_blank">
                         <Image
-                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          className="mx-auto h-auto max-w-full opacity-80 grayscale hover:opacity-100"
                           src="/assets/img/img4.png"
                           width={500}
                           height={500}
@@ -70,10 +67,10 @@ function Clients() {
                     </div>
                   </div>
                   <div className="splide__slide">
-                    <div className="w-full px-4 text-center pb-3">
+                    <div className="w-full px-4 pb-3 text-center">
                       <Link href="#" target="_blank">
                         <Image
-                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          className="mx-auto h-auto max-w-full opacity-80 grayscale hover:opacity-100"
                           src="/assets/img/img5.png"
                           width={500}
                           height={500}
@@ -83,10 +80,10 @@ function Clients() {
                     </div>
                   </div>
                   <div className="splide__slide">
-                    <div className="w-full px-4 text-center pb-3">
+                    <div className="w-full px-4 pb-3 text-center">
                       <Link href="#" target="_blank">
                         <Image
-                          className="grayscale mx-auto opacity-80 hover:opacity-100 max-w-full h-auto"
+                          className="mx-auto h-auto max-w-full opacity-80 grayscale hover:opacity-100"
                           src="/assets/img/img6.png"
                           width={500}
                           height={500}

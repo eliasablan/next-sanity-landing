@@ -3,14 +3,14 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <div id="contact" className="section relative pb-20 bg-white">
-      <div className="container xl:max-w-6xl mx-auto px-4">
-        <div className="flex flex-wrap flex-row -mx-4 justify-center">
-          <div className="max-w-ful px-4 w-full lg:w-8/12">
-            <div className="bg-gray-50 border-b border-gray-100 w-full p-12">
+    <div id="contact" className="section relative bg-white pb-20">
+      <div className="container mx-auto px-4 xl:max-w-6xl">
+        <div className="-mx-4 flex flex-row flex-wrap justify-center">
+          <div className="max-w-ful w-full px-4 lg:w-8/12">
+            <div className="w-full border-b border-gray-100 bg-gray-50 p-12">
               {/* section header */}
-              <header className="text-center mx-auto mb-12 lg:px-20">
-                <h2 className="text-2xl leading-normal mb-2 font-bold text-gray-800 fade-up-show">
+              <header className="mx-auto mb-12 text-center lg:px-20">
+                <h2 className="fade-up-show mb-2 text-2xl font-bold leading-normal text-gray-800">
                   <span className="font-light">Contact</span> Us
                 </h2>
                 <svg
@@ -49,7 +49,7 @@ function Contact() {
                     style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
                   ></line>
                 </svg>
-                <p className="text-gray-600 leading-relaxed font-light text-xl mx-auto pb-2 fade-up-show">
+                <p className="fade-up-show mx-auto pb-2 text-xl font-light leading-relaxed text-gray-600">
                   Have questions about service, please contact us.
                 </p>
               </header>
@@ -57,66 +57,66 @@ function Contact() {
 
               {/* contact form */}
               <form action="#">
-                <div className="flex flex-wrap flex-row -mx-4 fade-up-show">
-                  <div className="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
-                    <label className="inline-block mb-2" htmlFor="name">
+                <div className="fade-up-show -mx-4 flex flex-row flex-wrap">
+                  <div className="mb-6 w-full max-w-full flex-shrink px-4 md:w-1/2">
+                    <label className="mb-2 inline-block" htmlFor="name">
                       Your Name
                     </label>
                     <input
                       type="text"
                       name="name"
-                      className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
+                      className="relative w-full overflow-x-auto rounded border-b border-gray-100 bg-white px-5 py-3 leading-5 text-gray-800 focus:border-gray-400 focus:outline-none focus:ring-0"
                       id="name"
                     />
                     <div className="validate"></div>
                   </div>
-                  <div className="flex-shrink w-full max-w-full md:w-1/2 px-4 mb-6">
-                    <label className="inline-block mb-2" htmlFor="email">
+                  <div className="mb-6 w-full max-w-full flex-shrink px-4 md:w-1/2">
+                    <label className="mb-2 inline-block" htmlFor="email">
                       Your Email
                     </label>
                     <input
                       type="email"
-                      className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
+                      className="relative w-full overflow-x-auto rounded border-b border-gray-100 bg-white px-5 py-3 leading-5 text-gray-800 focus:border-gray-400 focus:outline-none focus:ring-0"
                       name="email"
                       id="email"
                     />
                     <div className="validate"></div>
                   </div>
                 </div>
-                <div className="mb-6 fade-up-show">
-                  <label className="inline-block mb-2" htmlFor="subject">
+                <div className="fade-up-show mb-6">
+                  <label className="mb-2 inline-block" htmlFor="subject">
                     Subject
                   </label>
                   <input
                     type="text"
-                    className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
+                    className="relative w-full overflow-x-auto rounded border-b border-gray-100 bg-white px-5 py-3 leading-5 text-gray-800 focus:border-gray-400 focus:outline-none focus:ring-0"
                     name="subject"
                     id="subject"
                   />
                   <div className="validate"></div>
                 </div>
-                <div className="mb-6 fade-up-show">
-                  <label className="inline-block mb-2" htmlFor="messages">
+                <div className="fade-up-show mb-6">
+                  <label className="mb-2 inline-block" htmlFor="messages">
                     Message
                   </label>
                   <textarea
-                    className="w-full leading-5 relative py-3 px-5 rounded text-gray-800 bg-white border-b border-gray-100 overflow-x-auto focus:outline-none focus:border-gray-400 focus:ring-0"
+                    className="relative w-full overflow-x-auto rounded border-b border-gray-100 bg-white px-5 py-3 leading-5 text-gray-800 focus:border-gray-400 focus:outline-none focus:ring-0"
                     name="message"
                     rows="10"
                     id="messages"
                   ></textarea>
                   <div className="validate"></div>
                 </div>
-                <div className="text-center mb-6 fade-up-show">
+                <div className="fade-up-show mb-6 text-center">
                   <Link
-                    className="py-2.5 px-10 inline-block text-center leading-normal text-gray-100 bg-black border border-black hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
+                    className="inline-block border border-black bg-black px-10 py-2.5 text-center leading-normal text-gray-100 hover:text-white hover:ring-0 focus:outline-none focus:ring-0"
                     href="#project"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1.5rem"
                       height="1.5rem"
-                      className="inline-block mr-1"
+                      className="mr-1 inline-block"
                       fill="currentColor"
                       viewBox="0 0 512 512"
                     >

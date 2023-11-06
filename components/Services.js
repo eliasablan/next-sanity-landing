@@ -21,12 +21,12 @@ const Services = async () => {
   return (
     <div
       id="services"
-      className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white"
+      className="section relative bg-white pb-8 pt-20 md:pb-0 md:pt-16"
     >
-      <div className="container xl:max-w-6xl mx-auto px-4">
+      <div className="container mx-auto px-4 xl:max-w-6xl">
         {/* Heading start */}
-        <header className="text-center mx-auto mb-12 lg:px-20">
-          <h2 className="text-2xl leading-normal mb-2 font-bold text-black fade-up-show">
+        <header className="mx-auto mb-12 text-center lg:px-20">
+          <h2 className="fade-up-show mb-2 text-2xl font-bold leading-normal text-black">
             What We Do
           </h2>
           <svg
@@ -65,30 +65,30 @@ const Services = async () => {
               style={{ strokeWidth: 2, strokeMiterlimit: 10 }}
             ></line>
           </svg>
-          <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2 fade-up-show">
+          <p className="fade-up-show mx-auto pb-2 text-xl font-light leading-relaxed text-gray-500">
             Save time managing advertising & Content for your business.
           </p>
         </header>
         {/* End heading */}
 
         {/* row */}
-        <div className="flex flex-wrap flex-row -mx-4 text-center">
+        <div className="-mx-4 flex flex-row flex-wrap text-center">
           {services
             ? services.map((service) => (
                 <div
                   key={service._id}
-                  className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 fade-up-show"
+                  className="fade-up-show w-full max-w-full flex-shrink px-4 sm:w-1/2 lg:w-1/3 lg:px-6"
                 >
                   {/* service block */}
-                  <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-                    <div className="inline-block text-gray-700 mb-2">
+                  <div className="mb-12 transform border-b border-gray-100 bg-gray-50 px-12 py-8 transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div className="mb-2 inline-block text-gray-700">
                       {/* icon */}
                       <DynamicIconRenderer
                         icon={service.icon}
                         className="h-11 w-11"
                       />
                     </div>
-                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+                    <h3 className="mb-2 text-lg font-semibold leading-normal text-black">
                       {service.title}
                     </h3>
                     <p className="text-gray-500">{service.description}</p>

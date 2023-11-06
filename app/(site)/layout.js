@@ -25,12 +25,12 @@ export default async function RootLayout({ children }) {
   const everything = await getEverything();
 
   return (
-    <html lang="en" className="!scroll-smooth !scroll-pt-16">
+    <html lang="en" className="!scroll-pt-16 !scroll-smooth">
       <body
         className={clsx(
           "text-gray-700",
           roboto.className,
-          "scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-white"
+          "scrollbar-thin scrollbar-track-white scrollbar-thumb-gray-700",
         )}
       >
         <Providers everything={everything}>

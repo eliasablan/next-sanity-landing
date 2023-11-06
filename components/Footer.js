@@ -5,20 +5,20 @@ function Footer() {
   return (
     <footer className="bg-gray-50 text-gray-700">
       {/* <!--Footer content--> */}
-      <div id="footer-content" className="relative pt-8 xl:pt-16 pb-6 xl:pb-12">
-        <div className="container xl:max-w-6xl mx-auto px-4 overflow-hidden">
-          <div className="flex flex-wrap flex-row lg:justify-between -mx-3">
-            <div className="flex-shrink max-w-full w-full lg:w-2/5 px-3 lg:pr-16">
-              <div className="flex items-center mb-2">
+      <div id="footer-content" className="relative pb-6 pt-8 xl:pb-12 xl:pt-16">
+        <div className="container mx-auto overflow-hidden px-4 xl:max-w-6xl">
+          <div className="-mx-3 flex flex-row flex-wrap lg:justify-between">
+            <div className="w-full max-w-full flex-shrink px-3 lg:w-2/5 lg:pr-16">
+              <div className="mb-2 flex items-center">
                 <Link className="hover:text-gray-800" href="/" title="Home">
-                  <span className="text-3xl leading-normal mb-2 font-bold text-gray-800 mt-2">
+                  <span className="mb-2 mt-2 text-3xl font-bold leading-normal text-gray-800">
                     Logo
                   </span>
                 </Link>
                 {/* <!-- <img src="src/img-min/logo.png" alt="LOGO"> --> */}
               </div>
               <p>One page landing page.</p>
-              <ul className="space-x-3 mt-6 mb-6 Lg:mb-0">
+              <ul className="Lg:mb-0 mb-6 mt-6 space-x-3">
                 {/* <!--facebook--> */}
                 <li className="inline-block">
                   <Link
@@ -122,10 +122,10 @@ function Footer() {
                 {/* <!--end instagram--> */}
               </ul>
             </div>
-            <div className="flex-shrink max-w-full w-full lg:w-3/5 px-3">
-              <div className="flex flex-wrap flex-row">
-                <div className="flex-shrink max-w-full w-1/2 md:w-1/3 mb-6 lg:mb-0">
-                  <h4 className="text-base leading-normal mb-3 uppercase text-gray-800">
+            <div className="w-full max-w-full flex-shrink px-3 lg:w-3/5">
+              <div className="flex flex-row flex-wrap">
+                <div className="mb-6 w-1/2 max-w-full flex-shrink md:w-1/3 lg:mb-0">
+                  <h4 className="mb-3 text-base uppercase leading-normal text-gray-800">
                     Support
                   </h4>
                   <ul>
@@ -143,8 +143,8 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className="flex-shrink max-w-full w-1/2 md:w-1/3 mb-6 lg:mb-0">
-                  <h4 className="text-base leading-normal mb-3 uppercase text-gray-800">
+                <div className="mb-6 w-1/2 max-w-full flex-shrink md:w-1/3 lg:mb-0">
+                  <h4 className="mb-3 text-base uppercase leading-normal text-gray-800">
                     Includes
                   </h4>
                   <ul>
@@ -162,8 +162,8 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className="flex-shrink max-w-full w-1/2 md:w-1/3 mb-6 lg:mb-0">
-                  <h4 className="text-base leading-normal mb-3 uppercase text-gray-800">
+                <div className="mb-6 w-1/2 max-w-full flex-shrink md:w-1/3 lg:mb-0">
+                  <h4 className="mb-3 text-base uppercase leading-normal text-gray-800">
                     Legal
                   </h4>
                   <ul>
@@ -189,7 +189,7 @@ function Footer() {
 
       {/* <!--Start footer copyright--> */}
       <div className="footer-dark">
-        <div className="container xl:max-w-6xl mx-auto px-4 py-4 border-t border-gray-600 border-opacity-10">
+        <div className="container mx-auto border-t border-gray-600 border-opacity-10 px-4 py-4 xl:max-w-6xl">
           <div className="row">
             <div className="col-12 col-md text-center">
               <p className="d-block my-3">
