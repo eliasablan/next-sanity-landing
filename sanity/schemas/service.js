@@ -1,4 +1,5 @@
 import { defineType } from "sanity";
+import DynamicIconRenderer from "@/components/DynamicIconRenderer";
 
 export default defineType({
   name: "service",
@@ -25,4 +26,17 @@ export default defineType({
       title: "Descripcion",
     },
   ],
+  preview: {
+    select: {
+      icon: "icon",
+      title: "title",
+      description: "description",
+    },
+
+    prepare: ({ icon, title, description }) => ({
+      media: <DynamicIconRenderer icon={icon} />,
+      title,
+      subtitle: description,
+    }),
+  },
 });

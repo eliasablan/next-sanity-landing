@@ -1,4 +1,5 @@
 import { defineType } from "sanity";
+import { DateFormat } from "@/components/date";
 
 export default defineType({
   name: "portfolio",
@@ -53,4 +54,18 @@ export default defineType({
       title: "Descripcion",
     },
   ],
+  preview: {
+    select: {
+      image: "image",
+      title: "title",
+      category: "category",
+      date: "date",
+    },
+
+    prepare: ({ image, title, category, date }) => ({
+      media: image,
+      title: `${title} - ${category}`,
+      subtitle: DateFormat(date),
+    }),
+  },
 });

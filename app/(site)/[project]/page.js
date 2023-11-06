@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getProject } from "@/sanity/sanity-utils";
 
-import Date from "@/components/date";
+import { DateJSX } from "@/components/date";
 import BackToHomeButton from "@/components/BackToHomeButton";
 
 const Project = async ({ params }) => {
@@ -41,7 +41,7 @@ const Project = async ({ params }) => {
       />
       <p className="text-lg fade-up">{project.description}</p>
       <h2 className="my-6 text-lg font-semibold text-gray-800 fade-up">
-        <Date dateString={project.date} />
+        <DateJSX dateString={project.date} />
       </h2>
     </div>
   );

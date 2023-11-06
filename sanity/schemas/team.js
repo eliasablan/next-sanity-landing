@@ -68,4 +68,18 @@ export default defineType({
       ],
     },
   ],
+  preview: {
+    select: {
+      image: "image",
+      name: "name",
+      title: "title",
+      category: "category",
+    },
+
+    prepare: ({ image, name, title }) => ({
+      media: image,
+      title: name,
+      subtitle: title,
+    }),
+  },
 });
