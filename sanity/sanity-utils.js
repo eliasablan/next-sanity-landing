@@ -16,6 +16,26 @@ const getEverything = async () => {
   );
 };
 
+const getFullTeam = async () => {
+  return client.fetch(
+    groq`*[_type=="team"]{
+      _id,
+      name,
+      title,
+      "image_crop": image.crop,
+      "image_url": image.asset->url,
+      "image_alt": image.alt,
+      rrss[]{
+        socialNetwork->{
+          base_url,
+          icon
+        },
+        username
+      },
+    }`
+  );
+};
+
 const getProjects = async () => {
   return client.fetch(
     groq`*[_type=="portfolio"]{
@@ -46,4 +66,4 @@ const getProject = async (slug) => {
   );
 };
 
-export { getEverything, getProjects, getProject };
+export { getEverything, getFullTeam, getProjects, getProject };
