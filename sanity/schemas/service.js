@@ -6,7 +6,7 @@ export default defineType({
   title: "Servicio",
   fields: [
     {
-      title: "Icon",
+      title: "Icono",
       name: "icon",
       type: "iconPicker",
       options: {
